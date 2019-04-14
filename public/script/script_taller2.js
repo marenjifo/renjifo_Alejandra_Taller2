@@ -19,8 +19,14 @@ $(document).ready(function() {
       // si el scroll pasa de los 80px, se añade la clase solid-bar
       if($(this).scrollTop() > 80) { 
           $('.nav-fija').addClass('solid-bar');
+          $('.nav-fija__icono').addClass('solid-bar');
+          $('.nav-fija__item').addClass('solid-bar');
+          $('.nav-fija__enlace').addClass('solid-bar');
       } else {
           $('.nav-fija').removeClass('solid-bar');
+          $('.nav-fija__icono').removeClass('solid-bar');
+          $('.nav-fija__item').removeClass('solid-bar');
+          $('.nav-fija__enlace').removeClass('solid-bar');
       }
     });
 });

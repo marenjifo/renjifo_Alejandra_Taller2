@@ -16,12 +16,19 @@ app.set('view engine','handlebars');
 
 
 //Ruta inicial
-app.get('/',function(request,response){
+app.get('/',function(req,res){
 
-    response.sendFile(__dirname+'/public/home.html')
+    res.sendFile(__dirname+'/public/home.html')
 
 });
 
+//Ruta a la tienda
+app.get('/tienda', function(req, res) {
+    var contexto = {
+       
+    };
+    res.render('tienda',contexto);
+});
 
 
 

@@ -32,8 +32,6 @@ html{
     
     &__encabezado{
         flex-basis: 100vh;
-        //background-color: red;
-        background-image: url(/imagenes/banner.png );
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -90,14 +88,13 @@ html{
     position: fixed;
     width: 100%;
     height: 12vh;
-    //transition: background-color 0.5s ease 0s;
     transition: all 1s ease 0s;
     
     
     border-bottom: 0.02em solid rgba(255, 255, 255, 0.747);
     &.solid-bar{
-        background-color: $color-gris;
-        border:0;
+        background-color: $color-blanco;
+        border-bottom: 0.2em solid $color-gris;
     }
 
    
@@ -113,16 +110,25 @@ html{
         justify-content: space-around;
         align-items: center;
         
-        
-        
-        
     }
     
-    &__logo{
+    &__icono{
         transition: all .3s ease-in-out;
+        position: relative;
+        display: inline-block;
+        color: $color-blanco;
+        font-family: $tipo-texto;
+        font-size: 2em;
+        margin: 0;
+        display: flex;
+        align-items: center;
         
         &:hover{
             transform: scale(1.1);
+        }
+
+        &.solid-bar{
+            color: $color-gris;
         }
     }
     
@@ -155,6 +161,18 @@ html{
             }
             
         }
+
+        &.solid-bar{
+            color: $color-gris;
+            &:hover{
+                
+                &:after{
+                    width: 100%;
+                    background: $color-gris;
+                }
+                
+            }
+        }
     }
 
     &__enlace{
@@ -165,6 +183,12 @@ html{
             text-decoration: none;
         color: white;
         }
+
+        &.solid-bar{
+            color: $color-gris;
+        }
+
+        
     }
     
 }
