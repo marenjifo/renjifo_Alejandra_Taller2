@@ -98,7 +98,7 @@ html{
     border-bottom: 0.02em solid rgba(255, 255, 255, 0.747);
     &.solid-bar{
         background-color: $color-blanco;
-     
+        border-bottom: 2px solid #AFAFAF;
     }
 
    
@@ -196,6 +196,10 @@ html{
             color: $color-gris;
         }
 
+        &--icono{
+            font-size: 3em;
+        }
+
         
     }
 
@@ -216,13 +220,32 @@ html{
 .contenedor-prin{
     //background-color: green;
     width: 100%;
-    padding: 4em;
+    padding: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
     flex-basis: 88vh;
     margin-top: 12vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-size: cover;
+
+    &__arriba{
+        flex-basis: 75vh;
+       //background-color: red;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       padding-left: 6em;
+       
+    }
+
+    &__abajo{
+        flex-basis: 13vh;
+        //background-color: red;
+        display: flex;
+        justify-content: center;
+    }
     
     &__btn{
         font-size: 1.3em;
@@ -960,6 +983,94 @@ i {
     
 }
 
+
+//---------------Tienda de productos--------------//
+
+.tienda{
+
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+
+    &__filtros{
+        flex-basis: 30%;
+        width: 30%;
+       // background-color: blue;
+        padding: 4em;
+        padding-top: 1em;
+        display: flex;
+        flex-direction: column;
+ 
+    }
+
+    &__productos{
+        flex-basis: 70%;
+        width: 70%;
+        background-color: chocolate;
+    }
+}
+
+.filtros{
+
+    &__lista{
+        list-style-type: none;
+
+        &--colores{
+            list-style-type: none;
+            display: flex;
+        }
+      }
+
+      &__item{
+         
+          padding: 0.5em;
+      }
+
+      &__titulo{
+          font-family: $tipo-titulos;
+          margin-top: 1em;
+          color: $color-gris;
+      }
+
+      &__filtrar{
+          color: #686868;
+          width: 50%;
+          padding: 0.3em;
+          &:hover{
+            cursor: pointer;
+            background-color: #E5E5E5;
+          }
+          
+      }
+
+      &__color{
+        transition: all .3s ease-in-out;
+          width: 1.5em;
+          height: 1.5em;
+          border-radius: 50%;
+          opacity: 0.7;
+
+          &:hover{
+            cursor: pointer;
+            width: 1.7em;
+          height: 1.7em;
+          transform: scale(1.1);
+          opacity: 1;
+          }
+         
+      }
+
+     
+        
+            
+
+}
+
+
+
+
+//-----------------------------------------------------//
 //---------------Responsive de la página--------------//
 
 @media (max-width:450px){
