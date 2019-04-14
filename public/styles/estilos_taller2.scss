@@ -43,6 +43,10 @@ html{
         margin-bottom: 0.3em;
         color: $color-blanco;
         font-family: $tipo-titulos;
+
+        &--grande{
+            font-size: 6em;
+        }
     }
     
     
@@ -82,7 +86,7 @@ html{
     align-items: center;
     flex: 1;
     justify-content: center;
-    // background-color: pink;
+    background-color: black;
     z-index: 100;
     
     position: fixed;
@@ -94,7 +98,7 @@ html{
     border-bottom: 0.02em solid rgba(255, 255, 255, 0.747);
     &.solid-bar{
         background-color: $color-blanco;
-        border-bottom: 0.2em solid $color-gris;
+     
     }
 
    
@@ -130,6 +134,8 @@ html{
         &.solid-bar{
             color: $color-gris;
         }
+
+        
     }
     
     &__item{
@@ -178,6 +184,8 @@ html{
     &__enlace{
         text-decoration: none;
         color: white;
+        display: flex;
+        align-items: center;
 
         &:visited{
             text-decoration: none;
@@ -190,6 +198,12 @@ html{
 
         
     }
+
+    &__compra{
+        font-size: 0.7em;
+        font-family: $tipo-titulos;
+        margin-left: 0.5em;
+    }
     
 }
 
@@ -201,13 +215,14 @@ html{
 
 .contenedor-prin{
     //background-color: green;
-    width: 85vh;
-    padding: 2em;
+    width: 100%;
+    padding: 4em;
     flex-basis: 88vh;
     margin-top: 12vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-size: cover;
     
     &__btn{
         font-size: 1.3em;

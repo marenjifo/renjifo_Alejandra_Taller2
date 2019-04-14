@@ -1,3 +1,5 @@
+//Iconos Feather
+feather.replace()
 //-----------Para efecto de Fade In-----------------------
 const sr = ScrollReveal();
 sr.reveal('h1,p',{

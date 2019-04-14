@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Buy | Apple Watch</title>
     <link rel="stylesheet" href="/styles/estilos_taller2.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Open+Sans+Condensed:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     
@@ -13,7 +16,31 @@
 
        
             
-  
+         <!--Encabezado y barra de navegacion-->
+        <header class="app__encabezado" >
+            
+            <div class="nav-fija" id="miNav">
+                <ul class="nav-fija__bar">
+                    <li class="nav-fija__icono"><i class="fab fa-apple"></i></li>
+                    <li class="nav-fija__item">  <a href="/" class="nav-fija__enlace"> HOME </a></li>
+                    <li class="nav-fija__item">PRODUCTS</li>
+                    <li class="nav-fija__item">SUPPORT</li>
+                    <li class="nav-fija__item">ABOUT US</li>
+                    <li class="nav-fija__icono nav"><a href="/carrito" class="nav-fija__enlace"><i data-feather="shopping-bag"></i> <h2 class="nav-fija__compra">0</h2> </a> </li>
+                    <li class="nav-fija__item menu" > <i class="fa fa-bars"></i>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+            
+            <!--Informacion dentro del encabezado-->
+            <div class="contenedor-prin" style=" background-image: url(imagenes/banner-tiendaT.png)">
+                <h1 class="app__titulo-producto app__titulo-producto--grande">Choose <br> wisely</h1>
+               
+            </div>
+            
+        </header>
 
 
 
@@ -24,6 +51,11 @@
 
     </div>
 
+    <!--Archivos de javaScript -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="script/script_taller2.js"></script>
 
 </body>
 </html>
