@@ -988,16 +988,15 @@ i {
 
 .tienda{
 
-    background-color: white;
+    background-color: #F2F2F2;
     width: 100%;
     height: auto;
     display: flex;
 
     &__filtros{
-        flex-basis: 30%;
-        width: 30%;
-       // background-color: blue;
-        padding: 4em;
+        flex-basis: 15%;
+       //background-color: blue;
+        padding: 2em;
         padding-top: 1em;
         display: flex;
         flex-direction: column;
@@ -1005,12 +1004,15 @@ i {
     }
 
     &__productos{
-        flex-basis: 70%;
-        width: 70%;
-        background-color: chocolate;
+        flex-basis: 85%;
+        //background-color: chocolate;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3em;
     }
 }
 
+//---------------Seccion de filtros--------------//
 .filtros{
 
     &__lista{
@@ -1029,13 +1031,13 @@ i {
 
       &__titulo{
           font-family: $tipo-titulos;
-          margin-top: 1em;
-          color: $color-gris;
+          margin-top: 1.5em;
+          color: #515151;
       }
 
       &__filtrar{
           color: #686868;
-          width: 50%;
+          width: 100%;
           padding: 0.3em;
           &:hover{
             cursor: pointer;
@@ -1049,28 +1051,78 @@ i {
           width: 1.5em;
           height: 1.5em;
           border-radius: 50%;
-          opacity: 0.7;
+          opacity: 0.6;
 
           &:hover{
             cursor: pointer;
-            width: 1.7em;
-          height: 1.7em;
-          transform: scale(1.1);
           opacity: 1;
           }
          
       }
 
-     
-        
-            
+}
+//---------------Contenedor de producto--------------//
+
+.producto{
+    transition: all .3s ease-in-out;
+    flex-basis: 30%;
+    background-color: white;
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #DBDBDB;
+    margin: 1em;
+
+    &:hover{
+        box-shadow: 8px 8px 10px 0px rgba(230,230,230,1);
+        cursor: pointer;
+    }
+
+
+    &__banner{
+        flex-basis: 65%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__info{
+        flex-basis: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 1.3em;
+        //background-color: red;
+
+        &--item{
+            margin: 0.2em 0;
+        }
+    }
+
+    &__modelo{
+        color: #B1B1B2;
+        font-size: 0.9em;
+    }
+
+    &__nombre{
+        color: #686868;
+    }
+
+    &__precio{
+        color: #515151;
+        font-family: $tipo-titulos;
+        font-size: 2em;
+    }
 
 }
 
 
 
 
+
 //-----------------------------------------------------//
+
+
 //---------------Responsive de la página--------------//
 
 @media (max-width:450px){
