@@ -1010,7 +1010,8 @@ i {
     
 }
 
-
+//---------------------TALLER 2---------------------//
+//-------------------------------------------------//
 //---------------Tienda de productos--------------//
 
 .tienda{
@@ -1143,9 +1144,57 @@ i {
 
 }
 
+//---------------Pagina de producto individual--------------//
 
+.informacion{
+    height: 88vh;
+    margin-top: 12vh;
+    background-color: #F2F2F2;
+    display: flex;
+    padding: 2em;
 
+    &__galeria{
+        flex-basis: 50%;
+        width: 50%;
+        background-color: red;
+        height: 100%;
+        display: flex;
+    }
 
+    &__carac{
+        flex-basis: 50%;
+        width: 50%;
+        background-color: blue;
+        height: 100%;
+    }
+}
+
+.galeria{
+
+    &__selector{
+        flex-basis: 25%;
+        background-color: pink;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__miniatura{
+        flex-basis: 25%;
+        background-color: #2D2D2D;
+    }
+
+    &__fotos{
+        flex-basis: 75%;
+        background-color: white;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    }
+
+    
+}
 
 //-----------------------------------------------------//
 
