@@ -101,6 +101,10 @@ html{
         border-bottom: 2px solid #AFAFAF;
     }
 
+    &--blanca{
+        background-color: $color-blanco;
+        border-bottom: 2px solid #AFAFAF;
+    }
    
     
     &__bar{
@@ -132,6 +136,10 @@ html{
         }
 
         &.solid-bar{
+            color: $color-gris;
+        }
+
+        &--blanco{
             color: $color-gris;
         }
 
@@ -179,6 +187,17 @@ html{
                 
             }
         }
+        &--blanco{
+            color: $color-gris;
+            &:hover{
+                
+                &:after{
+                    width: 100%;
+                    background: $color-gris;
+                }
+                
+            }
+        }
     }
 
     &__enlace{
@@ -198,6 +217,14 @@ html{
 
         &--icono{
             font-size: 3em;
+        }
+
+        &--blanco{
+            color: $color-gris;
+            &:visited{
+                text-decoration: none;
+                color: $color-gris;
+            }
         }
 
         

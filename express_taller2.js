@@ -30,6 +30,14 @@ app.get('/tienda', function(req, res) {
     res.render('tienda',contexto);
 });
 
+//Pestana
+app.get('/pestana', function(req, res) {
+    var contexto = {
+       
+    };
+    res.render('pestana',contexto);
+});
+
 
 
 
