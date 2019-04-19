@@ -1120,7 +1120,7 @@ i {
         flex-direction: column;
         justify-content: center;
         padding: 0 1.3em;
-        //background-color: red;
+        //background-color: gray;
 
         &--item{
             margin: 0.2em 0;
@@ -1130,16 +1130,26 @@ i {
     &__modelo{
         color: #B1B1B2;
         font-size: 0.9em;
+
+        &--grande{
+            font-size: 1.7em;
+        }
     }
 
     &__nombre{
         color: #686868;
+        &--grande{
+            font-size: 2.5em;
+        }
     }
 
     &__precio{
         color: #515151;
         font-family: $tipo-titulos;
         font-size: 2em;
+        &--grande{
+            font-size: 3em;
+        }
     }
 
 }
@@ -1151,10 +1161,10 @@ i {
     margin-top: 12vh;
     background-color: #F2F2F2;
     display: flex;
-    padding: 2em;
+    padding: 3em;
 
     &__galeria{
-        flex-basis: 50%;
+        flex-basis: 55%;
         width: 50%;
         background-color: red;
         height: 100%;
@@ -1162,11 +1172,15 @@ i {
     }
 
     &__carac{
-        flex-basis: 50%;
+        flex-basis: 45%;
         width: 50%;
         background-color: blue;
         height: 100%;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
     }
+
 }
 
 .galeria{
@@ -1177,11 +1191,15 @@ i {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding: 1em;
     }
 
     &__miniatura{
         flex-basis: 25%;
-        background-color: #2D2D2D;
+        background-color: white;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     &__fotos{
@@ -1192,8 +1210,44 @@ i {
         background-repeat: no-repeat;
         
     }
+}
 
-    
+.carac{
+
+    &__titulos{
+        flex-basis: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 1.3em;
+        background-color: gray;
+       
+
+        &--item{
+            margin: 0.2em 0;
+        }
+    }
+
+    &__filtros{
+        flex-basis: 20%;
+        background-color: red;
+    }
+
+    &__btn{
+        font-size: 2em;
+        padding: 0.2em;
+        width: 60% ;
+        border: 0.1em solid #515151;
+        color: #515151;
+        transition: 0.7s;
+        font-family: $tipo-titulos;
+        background-color: #F2F2F2;
+        &:hover{
+            box-shadow: inset 0 -4em 0 0 #515151;  
+            color: white;
+            cursor: pointer;
+        }
+    }
 }
 
 //-----------------------------------------------------//
