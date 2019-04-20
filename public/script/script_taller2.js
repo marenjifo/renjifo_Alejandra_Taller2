@@ -1,3 +1,6 @@
+function paginaCargada(){
+
+
 //Iconos Feather
 feather.replace()
 
@@ -73,6 +76,8 @@ function menuHamb() {
     }
   }
 menu.addEventListener('click',menuHamb);
+
+
 //------------Para la galeria de imagenes---------------
 var numImagen = 1;
 var anterior=document.querySelector(".galeria__anterior");
@@ -195,3 +200,9 @@ botones.forEach(recorrerBtn);
 botones2.forEach(recorrerBtn2);
 
 
+
+
+
+}
+
+window.addEventListener('load',paginaCargada);
