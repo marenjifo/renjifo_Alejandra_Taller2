@@ -1,70 +1,70 @@
 function paginaCargada(){
 
 
-//Iconos Feather
-feather.replace()
+    //Iconos Feather
+    feather.replace();
 
-//------Para galeria de imagenes del producto-----
-var imagenes = document.querySelectorAll('.galeria__miniatura');
-var banner = document.querySelector('.galeria__fotos');    
-    function recorrerImagenes(img, index){
-        function clickImagen(event){
-            var fondo = img.style.backgroundImage;
-           var url= fondo.replace('url(','').replace(')','');
-           console.log(url);
-           banner.style.backgroundImage = 'url(' + url + ')';
-        }
+    //-----------Para efecto de Fade In-----------------------
+const sr = ScrollReveal();
+sr.reveal('h1',{
+    
+    duration:2000,
+    origin: 'top',
+    distance: '8px',
+    reset:true
 
-        
 
-        function imgActiva(event){
-            for (let index = 0; index < imagenes.length; index++) {
-                const img = imagenes[index];
-                img.classList.remove('active');
-                
-            }
-             img.classList.add('active');
-            
-        }
+});
 
-        if(index === 0){
-            clickImagen();
-            imgActiva();
-        }
+//-----------Para la barra de navegacion-----------------
 
-        img.addEventListener('click', clickImagen);
-        img.addEventListener('click', imgActiva);
-    }
-    imagenes.forEach(recorrerImagenes);
 
-    var botones = document.querySelectorAll('.pestanas__btn');
-    var secciones = document.querySelectorAll('.pestanas__seccion');
-    function recorrerBotones(btn, index){
-        function mostrarSeccion(event){
-            secciones.forEach(function (seccion){
-                seccion.style.display = 'none';
-            });
-            secciones[index].style.display = 'block';
-        }
+$(document).ready(function() {
+    // Cuando la ventana hace scroll
+    $(window).scroll(function() {
+      // si el scroll pasa de los 80px, se añade la clase solid-bar
+      if($(this).scrollTop() > 80) { 
+          $('.nav-fija').addClass('solid-bar');
+          $('.nav-fija__icono').addClass('solid-bar');
+          $('.nav-fija__item').addClass('solid-bar');
+          $('.nav-fija__enlace').addClass('solid-bar');
+      } else {
+          $('.nav-fija').removeClass('solid-bar');
+          $('.nav-fija__icono').removeClass('solid-bar');
+          $('.nav-fija__item').removeClass('solid-bar');
+          $('.nav-fija__enlace').removeClass('solid-bar');
+      }
+    });
+});
 
-        function btnActivo(event){
-            for (let index = 0; index < botones.length; index++) {
-                const btn = botones[index];
-                btn.classList.remove('active');
-                
-            }
-             btn.classList.add('active');
-            
-        }
 
-        if(index === 0){
-            btnActivo();
-        }
+    //------------Para scroll suave-------------
+$(document).ready(function(){
+    // Add smooth scrolling to all links
+    $(".nav-fija__enlace--icono").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
 
-        btn.addEventListener('click', mostrarSeccion);
-        btn.addEventListener('click',btnActivo);
-    }
-    botones.forEach(recorrerBotones);
 
 }
+
 window.addEventListener('load',paginaCargada);

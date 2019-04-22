@@ -17,6 +17,7 @@ app.set('view engine','handlebars');
 //Arreglo de productos
 var productos = [];
 productos.push({
+    numero: 'P1',
     miniatura1: 'banner-P1.jpeg',
     miniatura2: 'banda-P1.jpeg',
     miniatura3: 'frente-P1.jpeg',
@@ -24,7 +25,24 @@ productos.push({
     nombre: 'Gold Aluminum Case with Pink Sand Sport Band',
     precio: '399',
     codigoColor: 'FCCAE9',
-    color: 'Coral',
+    color: 'Rose',
+    banda: 'Sport',
+    descripcion: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quo in! Inventore cum fugit obcaecati repellat. Fuga optio enim repudiandae necessitatibus consectetur numquam reiciendis qui ducimus, minus doloribus! Illo, perferendis.',
+    feature1: 'F1',feature2: 'F2',feature3: 'F3',feature4: 'F4',feature5: 'F5',
+    content1: 'C1',content2: 'C2',content3: 'C3',content4: 'C4',content5: 'C5',
+    detalles: 'detalles-P1.png',
+});
+
+productos.push({
+    numero: 'P2',
+    miniatura1: 'banner-P1.jpeg',
+    miniatura2: 'banda-P1.jpeg',
+    miniatura3: 'frente-P1.jpeg',
+    modelo: 'NIKE +',
+    nombre: 'Gold Aluminum Case with Pink Sand Sport Band',
+    precio: '599',
+    codigoColor: 'FCCAE9',
+    color: 'White',
     banda: 'Sport',
     descripcion: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quo in! Inventore cum fugit obcaecati repellat. Fuga optio enim repudiandae necessitatibus consectetur numquam reiciendis qui ducimus, minus doloribus! Illo, perferendis.',
     feature1: 'F1',feature2: 'F2',feature3: 'F3',feature4: 'F4',feature5: 'F5',
@@ -43,25 +61,18 @@ app.get('/',function(req,res){
 //Ruta a la tienda
 app.get('/tienda', function(req, res) {
     var contexto = {
-       
+        listaProductos: productos
     };
     res.render('tienda',contexto);
 });
 
-//Ruta a la tienda
-app.get('/prueba2', function(req, res) {
-    var contexto = {
-       
-    };
-    res.render('pestana',contexto);
-});
 
 //ruta dinamica
 app.get('/tienda/:pestana', function(req, res) {
     var contexto= null;
    
        productos.forEach(function(producto){
-           if(producto.precio == req.params.pestana){
+           if(producto.numero == req.params.pestana){
                contexto=producto;
            }
        });

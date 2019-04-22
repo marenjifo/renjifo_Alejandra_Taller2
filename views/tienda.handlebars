@@ -35,7 +35,7 @@
             </div>
             
             <!--Informacion dentro del encabezado-->
-            <div class="contenedor-prin" style=" background-image: url(imagenes/banner-tiendaT.png)">
+            <div class="contenedor-prin" style=" background-image: url(/imagenes/banner-tiendaT.png)">
             <div class="contenedor-prin__arriba">
                 <h1 class="app__titulo-producto app__titulo-producto--grande">Choose <br> wisely</h1>
            
@@ -91,45 +91,26 @@
 
             <div class="tienda__productos">
 
-                <div class="producto">
+                
 
-                    <div class="producto__banner" style=" background-image: url(imagenes/banner-P1.jpeg)"></div>
+                {{#each listaProductos}}
 
-                    <div class="producto__info">
-                    <p class="producto__info--item producto__modelo">SERIES 4</p>
-                    <p class="producto__info--item producto__nombre">Gold Aluminum Case with Pink Sand Sport Band</p>
-                     <p class="producto__info--item producto__precio">$399</p>
+                 <div class="producto" onclick="location.href='/tienda/{{this.numero}}';">
 
-                     </div>
-
-                </div>
-
-                 <div class="producto">
-
-                    <div class="producto__banner" style=" background-image: url(imagenes/banner-P1.jpeg)"></div>
+                    <div class="producto__banner" style=" background-image: url(/imagenes/{{this.miniatura1}}"></div>
 
                     <div class="producto__info">
-                    <p class="producto__info--item producto__modelo">SERIES 4</p>
-                    <p class="producto__info--item producto__nombre">Gold Aluminum Case with Pink Sand Sport Band</p>
-                     <p class="producto__info--item producto__precio">$399</p>
+                    <p class="producto__info--item producto__modelo">{{this.modelo}}</p>
+                    <p class="producto__info--item producto__nombre">{{this.nombre}}</p>
+                     <p class="producto__info--item producto__precio">${{this.precio}}</p>
 
                      </div>
-
+                  
                 </div>
 
+                 {{/each}}
 
-                 <div class="producto">
 
-                    <div class="producto__banner" style=" background-image: url(imagenes/banner-P1.jpeg)"></div>
-
-                    <div class="producto__info">
-                    <p class="producto__info--item producto__modelo">SERIES 4</p>
-                    <p class="producto__info--item producto__nombre">Gold Aluminum Case with Pink Sand Sport Band</p>
-                     <p class="producto__info--item producto__precio">$399</p>
-
-                     </div>
-
-                </div>
 
                 
 
@@ -151,7 +132,7 @@
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="script/script_taller2.js"></script>
+    <script src="/script/script2.js"></script>
 
 </body>
 </html>
