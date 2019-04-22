@@ -37,13 +37,12 @@
 
          <div class="galeria__selector">
 
-             <div class="galeria__miniatura" style=" background-image: url(imagenes/banner-P1.jpeg)"></div>
-             <div class="galeria__miniatura" style=" background-image: url(imagenes/banda-P1.jpeg)"></div>
-             <div class="galeria__miniatura" style=" background-image: url(imagenes/frente-P1.jpeg)"></div>
-
+             <div class="galeria__miniatura" style=" background-image: url(/imagenes/{{miniatura1}})"></div>
+             <div class="galeria__miniatura" style=" background-image: url(/imagenes/{{miniatura2}})"></div>
+             <div class="galeria__miniatura" style=" background-image: url(/imagenes/{{miniatura3}})"></div>
          </div>
           
-          <div class="galeria__fotos" style=" background-image: url(imagenes/banner-P1.jpeg)">
+          <div class="galeria__fotos">
 
              
           </div>
@@ -54,22 +53,22 @@
      <section class="informacion__carac">
 
          <div class="carac__titulos">
-                    <p class="producto__info--item producto__modelo producto__modelo--grande">SERIES 4</p>
-                    <p class="producto__info--item producto__nombre producto__nombre--grande">Gold Aluminum Case with Pink Sand Sport Band</p>
-                     <p class="producto__info--item producto__precio producto__precio--grande">$399</p>
+                    <p class="producto__info--item producto__modelo producto__modelo--grande">{{modelo}}</p>
+                    <p class="producto__info--item producto__nombre producto__nombre--grande">{{nombre}}</p>
+                     <p class="producto__info--item producto__precio producto__precio--grande">${{precio}}</p>
 
             </div>
 
         <div class="carac__filtros">
 
             <div class="carac__contF">
-            <div class="carac__color" style=" background-color: #FCCAE9"></div>
-            <p class="carac__nombreColor">Coral</p>
+            <div class="carac__color" style=" background-color: #{{codigoColor}}"></div>
+            <p class="carac__nombreColor">{{color}}</p>
             </div>
 
              <div class="carac__contF">
-            <div class="carac__banda" style=" background-image:url(imagenes/banda_icono.png)"></div>
-            <p class="carac__nombreColor">Sport</p>
+            <div class="carac__banda" style=" background-image:url(/imagenes/banda_icono.png)"></div>
+            <p class="carac__nombreColor">{{banda}}</p>
             </div>
           
         </div>    
@@ -95,32 +94,32 @@
         <div class="pestanas__contenido">
             <section class="pestanas__seccion">
                 
-                <p class="pestanas__texto"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quo in! Inventore cum fugit obcaecati repellat. Fuga optio enim repudiandae necessitatibus consectetur numquam reiciendis qui ducimus, minus doloribus! Illo, perferendis.</p>
+                <p class="pestanas__texto"> {{descripcion}}</p>
             </section>
             <section class="pestanas__seccion">
                
                 <ul class="pestanas__lista"> 
-                    <li class="pestanas__item">Feature 1</li>
-                    <li class="pestanas__item">Feature 2</li>
-                    <li class="pestanas__item">Feature 3</li>
-                    <li class="pestanas__item">Feature 4</li>
-                    <li class="pestanas__item">Feature 5</li>
+                    <li class="pestanas__item">{{feature1}}</li>
+                    <li class="pestanas__item">{{feature2}}</li>
+                    <li class="pestanas__item">{{feature3}}</li>
+                    <li class="pestanas__item">{{feature4}}</li>
+                    <li class="pestanas__item">{{feature5}}</li>
                 </ul>
             </section>
             <section class="pestanas__seccion">
                
                 <ul class="pestanas__lista"> 
-                    <li class="pestanas__item">Content 1</li>
-                    <li class="pestanas__item">Content 2</li>
-                    <li class="pestanas__item">Content 3</li>
-                    <li class="pestanas__item">Content 4</li>
-                    <li class="pestanas__item">Content 5</li>
+                    <li class="pestanas__item">{{content1}}</li>
+                    <li class="pestanas__item">{{content2}}</li>
+                    <li class="pestanas__item">{{content3}}</li>
+                    <li class="pestanas__item">{{content4}}</li>
+                    <li class="pestanas__item">{{content5}}</li>
                 </ul>
             </section>
         </div>
     </section>
 
-    <section class="detalles__img" style="background-image:url(imagenes/detalles-P1.png)">
+    <section class="detalles__img" style="background-image:url(/imagenes/{{detalles}})">
 
 
     </section>
