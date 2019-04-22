@@ -1218,7 +1218,7 @@ i {
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
-        
+        transition: all .3s ease-in-out;
     }
 }
 
@@ -1294,6 +1294,97 @@ i {
           background-position: center;
          
       }
+}
+
+
+//--------------Detalles del producto-------------------//
+.detalles{
+
+    background-color: #F2F2F2;
+    padding: 3.5em;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+
+    &__titulo{
+
+            font-size: 4.5em;
+           margin-bottom: 0.4em;
+            color: #515151;
+            font-family: $tipo-titulos;
+       
+
+    }
+
+    &__tabla{
+        display: flex;
+       flex-basis: 100%;
+        background-color: #F2F2F2;
+    }
+
+    &__img{
+        background-size: contain;
+        background-position: center;
+        flex-basis: 40%;
+        background-repeat: no-repeat;
+        background-color: #F2F2F2;
+    }
+
+}
+
+.pestanas{
+
+    flex-basis: 60%;
+    &__botones{
+        display: flex;
+    }
+
+    &__btn{
+        font-size: 2em;
+        padding: 0.5em;
+        width: 60% ;
+        border: 0.1em solid #515151;
+        color: #515151;
+        transition: 0.7s;
+        font-family: $tipo-titulos;
+        background-color: #F2F2F2;
+        margin-left: -2px;
+        &:hover {
+            box-shadow: inset 0 -3em 0 0 #515151;  
+            color: white;
+            cursor: pointer;
+        }
+        &.active {
+            box-shadow: inset 0 -3em 0 0 #515151;  
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    &__seccion{
+        display: none;
+        padding: 1.3em 0.3em;
+        &:first-child{
+            display: block;
+        }
+    }
+
+    &__texto{
+        font-size: 1.5em;
+        color: $color-gris;
+       
+    }
+
+    &__lista{
+        list-style-position: inside; 
+        list-style-type: square;
+    }
+
+    &__item{
+        font-size: 1.5em;
+        padding: 0.5em 0;
+        
+    }
 }
 
 //-----------------------------------------------------//

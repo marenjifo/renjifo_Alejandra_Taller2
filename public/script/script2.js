@@ -1,7 +1,10 @@
+function paginaCargada(){
+
+
 //Iconos Feather
 feather.replace()
 
-//------Para galeria de imagenes del producto VOY AQUI-----
+//------Para galeria de imagenes del producto-----
 var imagenes = document.querySelectorAll('.galeria__miniatura');
 var banner = document.querySelector('.galeria__fotos');    
     function recorrerImagenes(img, index){
@@ -33,3 +36,35 @@ var banner = document.querySelector('.galeria__fotos');
         img.addEventListener('click', imgActiva);
     }
     imagenes.forEach(recorrerImagenes);
+
+    var botones = document.querySelectorAll('.pestanas__btn');
+    var secciones = document.querySelectorAll('.pestanas__seccion');
+    function recorrerBotones(btn, index){
+        function mostrarSeccion(event){
+            secciones.forEach(function (seccion){
+                seccion.style.display = 'none';
+            });
+            secciones[index].style.display = 'block';
+        }
+
+        function btnActivo(event){
+            for (let index = 0; index < botones.length; index++) {
+                const btn = botones[index];
+                btn.classList.remove('active');
+                
+            }
+             btn.classList.add('active');
+            
+        }
+
+        if(index === 0){
+            btnActivo();
+        }
+
+        btn.addEventListener('click', mostrarSeccion);
+        btn.addEventListener('click',btnActivo);
+    }
+    botones.forEach(recorrerBotones);
+
+}
+window.addEventListener('load',paginaCargada);
