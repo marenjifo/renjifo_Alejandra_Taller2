@@ -17,36 +17,36 @@ app.set('view engine','handlebars');
 //Arreglo de productos
 var productos = [];
 productos.push({
-    numero: 'P1',
+    id: '1',
     miniatura1: 'banner-P1.jpeg',
     miniatura2: 'banda-P1.jpeg',
     miniatura3: 'frente-P1.jpeg',
     modelo: 'SERIES 4',
-    nombre: 'Gold Aluminum Case with Pink Sand Sport Band',
+    nombre: 'Pink Aluminum Case with Sport Band',
     precio: '399',
     codigoColor: 'FCCAE9',
-    color: 'Rose',
+    color: 'Pink',
     banda: 'Sport',
-    descripcion: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quo in! Inventore cum fugit obcaecati repellat. Fuga optio enim repudiandae necessitatibus consectetur numquam reiciendis qui ducimus, minus doloribus! Illo, perferendis.',
-    feature1: 'F1',feature2: 'F2',feature3: 'F3',feature4: 'F4',feature5: 'F5',
-    content1: 'C1',content2: 'C2',content3: 'C3',content4: 'C4',content5: 'C5',
+    descripcion: 'Compared to the Apple Watch 3, the new Apple Watch 4 offers a faster processor (S4 64-bit dual-core processor), larger screen and louder speaker to go along with LTE cellular support, walkie-talkie mode, more extensive and context-based notifications, and more.',
+    feature1: 'Built-in GPS',feature2: 'W3 Apple wireless chip',feature3: 'Barometric altimeter',feature4: 'Capacity 16GB',feature5: 'Optical heart sensor',
+    content1: 'Gold Aluminum Case',content2: 'S/M Sport Band',content3: '1m Magnetic Charging Cable',content4: '5W USB Power Adapter',content5: 'Ambient light sensor',
     detalles: 'detalles-P1.png',
 });
 
 productos.push({
-    numero: 'P2',
+    id: '2',
     miniatura1: 'banner-P1.jpeg',
     miniatura2: 'banda-P1.jpeg',
     miniatura3: 'frente-P1.jpeg',
     modelo: 'NIKE +',
-    nombre: 'Gold Aluminum Case with Pink Sand Sport Band',
+    nombre: 'Silver Aluminum Case with Sport Band',
     precio: '599',
-    codigoColor: 'FCCAE9',
-    color: 'White',
+    codigoColor: 'E8E8E8',
+    color: 'Silver',
     banda: 'Sport',
-    descripcion: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quo in! Inventore cum fugit obcaecati repellat. Fuga optio enim repudiandae necessitatibus consectetur numquam reiciendis qui ducimus, minus doloribus! Illo, perferendis.',
-    feature1: 'F1',feature2: 'F2',feature3: 'F3',feature4: 'F4',feature5: 'F5',
-    content1: 'C1',content2: 'C2',content3: 'C3',content4: 'C4',content5: 'C5',
+    descripcion: 'Compared to the Apple Watch 3, the new Apple Watch 4 offers a faster processor (S4 64-bit dual-core processor), larger screen and louder speaker to go along with LTE cellular support, walkie-talkie mode, more extensive and context-based notifications, and more.',
+    feature1: 'Built-in GPS',feature2: 'W3 Apple wireless chip',feature3: 'Barometric altimeter',feature4: 'Capacity 16GB',feature5: 'Optical heart sensor',
+    content1: 'Gold Aluminum Case',content2: 'S/M Sport Band',content3: '1m Magnetic Charging Cable',content4: '5W USB Power Adapter',content5: 'Ambient light sensor',
     detalles: 'detalles-P1.png',
 });
 
@@ -54,7 +54,7 @@ productos.push({
 //Ruta inicial
 app.get('/',function(req,res){
 
-    res.sendFile(__dirname+'/public/home.html')
+    res.sendFile(__dirname+'/public/home.html');
 
 });
 
@@ -72,7 +72,7 @@ app.get('/tienda/:pestana', function(req, res) {
     var contexto= null;
    
        productos.forEach(function(producto){
-           if(producto.numero == req.params.pestana){
+           if(producto.id == req.params.pestana){
                contexto=producto;
            }
        });
