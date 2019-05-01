@@ -1,0 +1,326 @@
+[
+    {
+        "id": 1,
+        "imagenes": ["banner-P1.jpeg","banda-P1.jpeg","frente-P1.jpeg","detalles-P1.png"],
+        "modelo": "SERIES 4",
+        "nombre": "Pink Aluminum Case with Sport Band",
+        "precio": 399,
+        "codigoColor": "FCCAE9",
+        "color": "Pink",
+        "banda": "Sport",
+        "descripcion": "Compared to the Apple Watch 3, the new Apple Watch 4 offers a faster processor (S4 64-bit dual-core processor), larger screen and louder speaker to go along with LTE cellular support, walkie-talkie mode, more extensive and context-based notifications, and more.",
+        "caracteristicas": ["Built-in GPS","W3 Apple wireless chip","Barometric altimeter","Capacity 16GB","Optical heart sensor"],
+        "contenido": ["Pink Aluminum Case","S/M Sport Band","1m Magnetic Charging Cable","5W USB Power Adapter","Ambient light sensor"]
+        
+        
+    },
+    
+    {
+        
+        "id": 2,
+        "imagenes": ["banner-P2.jpeg","banda-P2.jpeg","frente-P2.jpeg","detalles-P2.png"],
+        "modelo": "SERIES 4",
+        "nombre": "Silver Aluminum Case with Sport Band",
+        "precio": 399,
+        "codigoColor": "E8E8E8",
+        "color": "Silver",
+        "banda": "Sport",
+        "descripcion": "Compared to the Apple Watch 3, the new Apple Watch 4 offers a faster processor (S4 64-bit dual-core processor), larger screen and louder speaker to go along with LTE cellular support, walkie-talkie mode, more extensive and context-based notifications, and more.",
+        "caracteristicas": ["Built-in GPS","W3 Apple wireless chip","Barometric altimeter","Capacity 16GB","Optical heart sensor"],
+        "contenido": ["Silver Aluminum Case","S/M Sport Band","1m Magnetic Charging Cable","5W USB Power Adapter","Ambient light sensor"]
+        
+    },
+    
+    {
+        
+        "id": 3,
+        "imagenes": ["banner-P3.jpeg","banda-P3.jpeg","frente-P3.jpeg","detalles-P3.png"],
+        "modelo": "SERIES 4",
+        "nombre": "Black Aluminum Case with Sport Band",
+        "precio": 399,
+        "codigoColor": "2F2F2F",
+        "color": "Black",
+        "banda": "Sport",
+        "descripcion": "Compared to the Apple Watch 3, the new Apple Watch 4 offers a faster processor (S4 64-bit dual-core processor), larger screen and louder speaker to go along with LTE cellular support, walkie-talkie mode, more extensive and context-based notifications, and more.",
+        "caracteristicas": ["Built-in GPS","W3 Apple wireless chip","Barometric altimeter","Capacity 16GB","Optical heart sensor"],
+        "contenido": ["Black Aluminum Case","M/L Sport Band","1m Magnetic Charging Cable","5W USB Power Adapter","Ambient light sensor"]
+        
+    },
+    
+    {
+        
+        "id": 4,
+        "imagenes": ["banner-P4.jpeg","banda-P4.jpeg","frente-P4.jpeg","detalles-P4.png"],
+        "modelo": "SERIES 4",
+        "nombre": "Pink Aluminum Case with Leather Band",
+        "precio": 699,
+        "codigoColor": "FCCAE9",
+        "color": "Pink",
+        "banda": "Leather",
+        "descripcion": "Compared to the Apple Watch 3, the new Apple Watch 4 offers a faster processor (S4 64-bit dual-core processor), larger screen and louder speaker to go along with LTE cellular support, walkie-talkie mode, more extensive and context-based notifications, and more.",
+        "caracteristicas": ["Built-in GPS","W3 Apple wireless chip","Barometric altimeter","Capacity 16GB","Optical heart sensor"],
+        "contenido": ["Pink Aluminum Case","S/M Leather Band","1m Magnetic Charging Cable","5W USB Power Adapter","Ambient light sensor"]
+        
+    },
+    
+    {
+        
+        "id": 5,
+        "imagenes": ["banner-P5.jpeg","banda-P5.jpeg","frente-P5.jpeg","detalles-P5.png"],
+        "modelo": "SERIES 4",
+        "nombre": "Silver Aluminum Case with Leather Band",
+        "precio": 699,
+        "codigoColor": "E8E8E8",
+        "color": "Silver",
+        "banda": "Leather",
+        "descripcion": "Compared to the Apple Watch 3, the new Apple Watch 4 offers a faster processor (S4 64-bit dual-core processor), larger screen and louder speaker to go along with LTE cellular support, walkie-talkie mode, more extensive and context-based notifications, and more.",
+        "caracteristicas": ["Built-in GPS","W3 Apple wireless chip","Barometric altimeter","Capacity 16GB","Optical heart sensor"],
+        "contenido": ["Silver Aluminum Case","M/L Leather Band","1m Magnetic Charging Cable","5W USB Power Adapter","Ambient light sensor"]
+        
+    },
+    
+    {
+        
+        "id": 6,
+        "imagenes": ["banner-P6.jpeg","banda-P6.jpeg","frente-P6.jpeg","detalles-P6.png"],
+        "modelo": "SERIES 4",
+        "nombre": "Black Aluminum Case with Leather Band",
+        "precio": 699,
+        "codigoColor": "2F2F2F",
+        "color": "Black",
+        "banda": "Leather",
+        "descripcion": "Compared to the Apple Watch 3, the new Apple Watch 4 offers a faster processor (S4 64-bit dual-core processor), larger screen and louder speaker to go along with LTE cellular support, walkie-talkie mode, more extensive and context-based notifications, and more.",
+        "caracteristicas": ["Built-in GPS","W3 Apple wireless chip","Barometric altimeter","Capacity 16GB","Optical heart sensor"],
+        "contenido": ["Black Aluminum Case","M/L Leather Band","1m Magnetic Charging Cable","5W USB Power Adapter","Ambient light sensor"]
+        
+    },
+    
+    {
+        "id": 7,
+        "imagenes": ["banner-P7.jpeg","banda-P7.jpeg","frente-P7.jpeg","detalles-P7.png"],
+        "modelo": "SERIES 4",
+        "nombre": "Brown Aluminum Case with Steel Band",
+        "precio": 599,
+        "codigoColor": "B1937D",
+        "color": "Brown",
+        "banda": "Steel",
+        "descripcion": "Compared to the Apple Watch 3, the new Apple Watch 4 offers a faster processor (S4 64-bit dual-core processor), larger screen and louder speaker to go along with LTE cellular support, walkie-talkie mode, more extensive and context-based notifications, and more.",
+        "caracteristicas": ["Built-in GPS","W3 Apple wireless chip","Barometric altimeter","Capacity 16GB","Optical heart sensor"],
+        "contenido": ["Brown aluminum Case","S/M Steel Band","1m Magnetic Charging Cable","5W USB Power Adapter","Ambient light sensor"]
+        
+        
+    },
+    
+    {
+        
+        "id": 8,
+        "imagenes": ["banner-P8.jpeg","banda-P8.jpeg","frente-P8.jpeg","detalles-P8.png"],
+        "modelo": "SERIES 4",
+        "nombre": "Silver Aluminum Case with Steel Band",
+        "precio": 599,
+        "codigoColor": "E8E8E8",
+        "color": "Silver",
+        "banda": "Steel",
+        "descripcion": "Compared to the Apple Watch 3, the new Apple Watch 4 offers a faster processor (S4 64-bit dual-core processor), larger screen and louder speaker to go along with LTE cellular support, walkie-talkie mode, more extensive and context-based notifications, and more.",
+        "caracteristicas": ["Built-in GPS","W3 Apple wireless chip","Barometric altimeter","Capacity 16GB","Optical heart sensor"],
+        "contenido": ["Silver Aluminum Case","M/XL Steel Band","1m Magnetic Charging Cable","5W USB Power Adapter","Ambient light sensor"]
+        
+    },
+    
+    {
+        
+        "id": 9,
+        "imagenes": ["banner-P9.jpeg","banda-P9.jpeg","frente-P9.jpeg","detalles-P9.png"],
+        "modelo": "SERIES 4",
+        "nombre": "Black Aluminum Case with Steel Band",
+        "precio": 599,
+        "codigoColor": "2F2F2F",
+        "color": "Black",
+        "banda": "Steel",
+        "descripcion": "Compared to the Apple Watch 3, the new Apple Watch 4 offers a faster processor (S4 64-bit dual-core processor), larger screen and louder speaker to go along with LTE cellular support, walkie-talkie mode, more extensive and context-based notifications, and more.",
+        "caracteristicas": ["Built-in GPS","W3 Apple wireless chip","Barometric altimeter","Capacity 16GB","Optical heart sensor"],
+        "contenido": ["Black Aluminum Case","M/L Steel Band","1m Magnetic Charging Cable","5W USB Power Adapter","Ambient light sensor"]
+        
+    },
+    
+    {
+        
+        "id": 10,
+        "imagenes": ["banner-P10.jpeg","banda-P10.jpeg","frente-P10.jpeg","detalles-P10.png"],
+        "modelo": "NIKE +",
+        "nombre": "Black Aluminum Case with Nike Sport Band",
+        "precio": 599,
+        "codigoColor": "2F2F2F",
+        "color": "Black",
+        "banda": "Sport",
+        "descripcion": "Apple teamed up with Nike to make a version of Apple Watch meant for runners. It uniquely features a different strap design and specialised software to make it easier for runners to put it on quickly and make use of the device's built-in GPS (and cellular).",
+        "caracteristicas": ["Digital Crown with haptic feedback","Ion-X strengthened glass","Bluetooth 5.0","LTPO OLED Retina display with Force Touch","Improved accelerometer up to 32 g‑forces"],
+        "contenido": ["Black Aluminum Case","M/L Nike Sport Band","1m Magnetic Charging Cable","5W USB Power Adapter","Sapphire crystal"]
+        
+    },
+    
+    {
+        
+        "id": 11,
+        "imagenes": ["banner-P11.jpeg","banda-P11.jpeg","frente-P11.jpeg","detalles-P11.png"],
+        "modelo": "NIKE +",
+        "nombre": "Silver Aluminum Case with Nike Sport Band",
+        "precio": 599,
+        "codigoColor": "E8E8E8",
+        "color": "Silver",
+        "banda": "Sport",
+        "descripcion": "Apple teamed up with Nike to make a version of Apple Watch meant for runners. It uniquely features a different strap design and specialised software to make it easier for runners to put it on quickly and make use of the device's built-in GPS (and cellular).",
+        "caracteristicas": ["Digital Crown with haptic feedback","Ion-X strengthened glass","Bluetooth 5.0","LTPO OLED Retina display with Force Touch","Improved accelerometer up to 32 g‑forces"],
+        "contenido": ["Silver Aluminum Case","S/M Nike Sport Band","1m Magnetic Charging Cable","5W USB Power Adapter","Sapphire crystal"]
+        
+    },
+    
+    {
+        
+        "id": 12,
+        "imagenes": ["banner-P12.jpeg","banda-P12.jpeg","frente-P12.jpeg","detalles-P12.png"],
+        "modelo": "NIKE +",
+        "nombre": "Black Aluminum Case with Nike Leather Band",
+        "precio": 799,
+        "codigoColor": "2F2F2F",
+        "color": "Black",
+        "banda": "Leather",
+        "descripcion": "Apple teamed up with Nike to make a version of Apple Watch meant for runners. It uniquely features a different strap design and specialised software to make it easier for runners to put it on quickly and make use of the device's built-in GPS (and cellular).",
+        "caracteristicas": ["Digital Crown with haptic feedback","Ion-X strengthened glass","Bluetooth 5.0","LTPO OLED Retina display with Force Touch","Improved accelerometer up to 32 g‑forces"],
+        "contenido": ["Black Aluminum Case","M/L Nike Leather Band","1m Magnetic Charging Cable","5W USB Power Adapter","Sapphire crystal"]
+        
+    },
+    
+    {
+        
+        "id": 13,
+        "imagenes": ["banner-P13.jpeg","banda-P13.jpeg","frente-P13.jpeg","detalles-P13.png"],
+        "modelo": "NIKE +",
+        "nombre": "Silver Aluminum Case with Nike Leather Band",
+        "precio": 799,
+        "codigoColor": "E8E8E8",
+        "color": "Silver",
+        "banda": "Leather",
+        "descripcion": "Apple teamed up with Nike to make a version of Apple Watch meant for runners. It uniquely features a different strap design and specialised software to make it easier for runners to put it on quickly and make use of the device's built-in GPS (and cellular).",
+        "caracteristicas": ["Digital Crown with haptic feedback","Ion-X strengthened glass","Bluetooth 5.0","LTPO OLED Retina display with Force Touch","Improved accelerometer up to 32 g‑forces"],
+        "contenido": ["Silver Aluminum Case","M/L Nike Leather Band","1m Magnetic Charging Cable","5W USB Power Adapter","Sapphire crystal"]
+        
+    },
+    
+    {
+        
+        "id": 14,
+        "imagenes": ["banner-P14.jpeg","banda-P14.jpeg","frente-P14.jpeg","detalles-P14.png"],
+        "modelo": "NIKE +",
+        "nombre": "Black Aluminum Case with Nike Steel Band",
+        "precio": 699,
+        "codigoColor": "2F2F2F",
+        "color": "Black",
+        "banda": "Steel",
+        "descripcion": "Apple teamed up with Nike to make a version of Apple Watch meant for runners. It uniquely features a different strap design and specialised software to make it easier for runners to put it on quickly and make use of the device's built-in GPS (and cellular).",
+        "caracteristicas": ["Digital Crown with haptic feedback","Ion-X strengthened glass","Bluetooth 5.0","LTPO OLED Retina display with Force Touch","Improved accelerometer up to 32 g‑forces"],
+        "contenido": ["Black Aluminum Case","S/M Nike Steel Band","1m Magnetic Charging Cable","5W USB Power Adapter","Sapphire crystal"]
+        
+    },
+    
+    {
+        
+        "id": 15,
+        "imagenes": ["banner-P15.jpeg","banda-P15.jpeg","frente-P15.jpeg","detalles-P15.png"],
+        "modelo": "NIKE +",
+        "nombre": "Silver Aluminum Case with Nike Steel Band",
+        "precio": 699,
+        "codigoColor": "E8E8E8",
+        "color": "Silver",
+        "banda": "Steel",
+        "descripcion": "Apple teamed up with Nike to make a version of Apple Watch meant for runners. It uniquely features a different strap design and specialised software to make it easier for runners to put it on quickly and make use of the device's built-in GPS (and cellular).",
+        "caracteristicas": ["Digital Crown with haptic feedback","Ion-X strengthened glass","Bluetooth 5.0","LTPO OLED Retina display with Force Touch","Improved accelerometer up to 32 g‑forces"],
+        "contenido": ["Silver Aluminum Case","M/L Nike Steel Band","1m Magnetic Charging Cable","5W USB Power Adapter","Sapphire crystal"]
+        
+    },
+    
+    {
+        
+        "id": 16,
+        "imagenes": ["banner-P16.jpeg","banda-P16.jpeg","frente-P16.jpeg","detalles-P16.png"],
+        "modelo": "HERMÈS",
+        "nombre": "Brown Stainless Case with Hermès Sport Band",
+        "precio": 1199,
+        "codigoColor": "B1937D",
+        "color": "Brown",
+        "banda": "Sport",
+        "descripcion": "A partnership based on parallel thinking, singular vision, and mutual regard continues with a fresh expression. The latest Apple Watch Hermès collection showcases boldly colorful leather bands and a delightful watch face designed with Apple. It’s the ultimate tool for modern life — now with a dash of sophisticated whimsy.",
+        "caracteristicas": ["W3 Apple wireless chip","Optical heart sensor","Barometric altimeter","Up to 18 hours of battery life","Water resistant 50 meter"],
+        "contenido": ["Brown Stainless Case","S/M Hermès Sport Band","1m Magnetic Charging Cable","5W USB Power Adapter","LTE and UMTS "]
+        
+    },
+    
+    {
+        
+        "id": 17,
+        "imagenes": ["banner-P17.jpeg","banda-P17.jpeg","frente-P17.jpeg","detalles-P17.png"],
+        "modelo": "HERMÈS",
+        "nombre": "Brown Stainless Case with Hermès Steel Band",
+        "precio": 1499,
+        "codigoColor": "B1937D",
+        "color": "Brown",
+        "banda": "Steel",
+        "descripcion": "A partnership based on parallel thinking, singular vision, and mutual regard continues with a fresh expression. The latest Apple Watch Hermès collection showcases boldly colorful leather bands and a delightful watch face designed with Apple. It’s the ultimate tool for modern life — now with a dash of sophisticated whimsy.",
+        "caracteristicas": ["W3 Apple wireless chip","Optical heart sensor","Barometric altimeter","Up to 18 hours of battery life","Water resistant 50 meter"],
+        "contenido": ["Brown Stainless Case","S/M Hermès Steel Band","1m Magnetic Charging Cable","5W USB Power Adapter","LTE and UMTS "]
+        
+    },
+    
+    {
+        
+        "id": 18,
+        "imagenes": ["banner-P18.jpeg","banda-P18.jpeg","frente-P18.jpeg","detalles-P18.png"],
+        "modelo": "HERMÈS",
+        "nombre": "Brown Stainless Case with Hermès Leather Band",
+        "precio": 1899,
+        "codigoColor": "B1937D",
+        "color": "Brown",
+        "banda": "Leather",
+        "descripcion": "A partnership based on parallel thinking, singular vision, and mutual regard continues with a fresh expression. The latest Apple Watch Hermès collection showcases boldly colorful leather bands and a delightful watch face designed with Apple. It’s the ultimate tool for modern life — now with a dash of sophisticated whimsy.",
+        "caracteristicas": ["W3 Apple wireless chip","Optical heart sensor","Barometric altimeter","Up to 18 hours of battery life","Water resistant 50 meter"],
+        "contenido": ["Brown Stainless Case","M/L Hermès Leather Band","1m Magnetic Charging Cable","5W USB Power Adapter","LTE and UMTS "]
+        
+    },
+    
+    {
+        
+        "id": 19,
+        "imagenes": ["banner-P19.jpeg","banda-P19.jpeg","frente-P19.jpeg","detalles-P19.png"],
+        "modelo": "HERMÈS",
+        "nombre": "Blue Stainless Case with Hermès Leather Band",
+        "precio": 1899,
+        "codigoColor": "0036BC",
+        "color": "Blue",
+        "banda": "Leather",
+        "descripcion": "A partnership based on parallel thinking, singular vision, and mutual regard continues with a fresh expression. The latest Apple Watch Hermès collection showcases boldly colorful leather bands and a delightful watch face designed with Apple. It’s the ultimate tool for modern life — now with a dash of sophisticated whimsy.",
+        "caracteristicas": ["W3 Apple wireless chip","Optical heart sensor","Barometric altimeter","Up to 18 hours of battery life","Water resistant 50 meter"],
+        "contenido": ["Blue Stainless Case","S/M Hermès Leather Band","1m Magnetic Charging Cable","5W USB Power Adapter","LTE and UMTS "]
+        
+    },
+    
+    {
+        
+        "id": 20,
+        "imagenes": ["banner-P20.jpeg","banda-P20.jpeg","frente-P20.jpeg","detalles-P20.png"],
+        "modelo": "HERMÈS",
+        "nombre": "Blue Stainless Case with Hermès Sport Band",
+        "precio": 1899,
+        "codigoColor": "0036BC",
+        "color": "Blue",
+        "banda": "Sport",
+        "descripcion": "A partnership based on parallel thinking, singular vision, and mutual regard continues with a fresh expression. The latest Apple Watch Hermès collection showcases boldly colorful leather bands and a delightful watch face designed with Apple. It’s the ultimate tool for modern life — now with a dash of sophisticated whimsy.",
+        "caracteristicas": ["W3 Apple wireless chip","Optical heart sensor","Barometric altimeter","Up to 18 hours of battery life","Water resistant 50 meter"],
+        "contenido": ["Blue Stainless Case","S/M Hermès Sport Band","1m Magnetic Charging Cable","5W USB Power Adapter","LTE and UMTS "]
+        
+    }
+    
+    
+    
+    
+    
+]

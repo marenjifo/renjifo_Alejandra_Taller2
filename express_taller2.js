@@ -2,6 +2,33 @@
 var express = require('express');
 var exphbs = require('express-handlebars');
 
+//Mongo: crear variables (Paso 1)
+var MongoClient = require('mongodb').MongoClient;
+var assert = require('assert');
+const url = 'mongodb://localhost:27017';
+const dbName = 'tienda';
+const client = new MongoClient(url);
+
+//Mongo: conectar (Paso 2)
+client.connect(function(err) {
+    assert.equal(null, err);
+    console.log("Connected successfully to server");
+    const clientdb = client.db(dbName);
+    const productos = clientdb.collection('productos');
+    
+    productos.find({}, { sort: ['precio'] }).toArray(function(err,docs){
+        assert.equal(null,err);
+        console.log('Encontrados los documentos');
+        docs.forEach(function(prod){
+            console.log(prod.precio);
+
+        });
+        
+
+    });
+  
+    client.close();
+  });
 
 //Crear app de express
 var app = express();
@@ -17,7 +44,7 @@ app.set('view engine','handlebars');
 //Arreglo de productos
 var productos = [];
 productos.push({
-    id: '1',
+    numero: 'P1',
     miniatura1: 'banner-P1.jpeg',
     miniatura2: 'banda-P1.jpeg',
     miniatura3: 'frente-P1.jpeg',
@@ -34,7 +61,7 @@ productos.push({
 });
 
 productos.push({
-    id: '2',
+    numero: 'P2',
     miniatura1: 'banner-P1.jpeg',
     miniatura2: 'banda-P1.jpeg',
     miniatura3: 'frente-P1.jpeg',
@@ -72,7 +99,7 @@ app.get('/tienda/:pestana', function(req, res) {
     var contexto= null;
    
        productos.forEach(function(producto){
-           if(producto.id == req.params.pestana){
+           if(producto.numero == req.params.pestana){
                contexto=producto;
            }
        });
