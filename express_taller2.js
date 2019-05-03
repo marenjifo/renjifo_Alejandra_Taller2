@@ -93,6 +93,15 @@ app.get('/tienda', function(req, res) {
     res.render('tienda',contexto);
 });
 
+//Ruta al carrito
+app.get('/carrito', function(req, res) {
+    var contexto = {
+       
+    };
+    res.render('carrito',contexto);
+});
+
+
 
 //ruta dinamica
 app.get('/tienda/:pestana', function(req, res) {

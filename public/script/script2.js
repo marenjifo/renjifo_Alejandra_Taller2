@@ -65,6 +65,54 @@ $(document).ready(function(){
   });
 
 
+
+
+//----------------------Para filtros del modelo--------------------
+var filtrosM = document.querySelectorAll('.filtros__filtrar--modelo');
+
+    function recorrerFiltrosM(fil, index){
+
+        function filActivo(event){
+             fil.classList.add('active');
+        }
+
+       
+
+        fil.addEventListener('click', filActivo);
+    }
+    filtrosM.forEach(recorrerFiltrosM);
+
+//----------------------Para filtros de la banda--------------------
+var filtrosB = document.querySelectorAll('.filtros__filtrar--banda');
+
+    function recorrerFiltrosB(fil, index){
+
+        function filActivo(event){
+             fil.classList.add('active');
+        }
+
+       
+
+        fil.addEventListener('click', filActivo);
+    }
+    filtrosB.forEach(recorrerFiltrosB);
+
+//----------------------Para filtros del color--------------------
+var filtrosC = document.querySelectorAll('.filtros__color');
+
+    function recorrerFiltrosC(fil, index){
+
+        function filActivo(event){
+             fil.classList.add('active');
+        }
+
+       
+
+        fil.addEventListener('click', filActivo);
+    }
+    filtrosC.forEach(recorrerFiltrosC);
+
+
 }
 
 window.addEventListener('load',paginaCargada);
