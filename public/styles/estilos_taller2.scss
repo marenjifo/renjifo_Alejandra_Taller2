@@ -1020,7 +1020,8 @@ i {
     width: 100%;
     height: auto;
     display: flex;
-    padding-top: 1em;
+    padding-top: 3em;
+    
 
     &__filtros{
         flex-basis: 15%;
@@ -1029,7 +1030,7 @@ i {
         padding-top: 1em;
         display: flex;
         flex-direction: column;
- 
+       
     }
 
     &__productos{
@@ -1038,6 +1039,7 @@ i {
         display: flex;
         flex-wrap: wrap;
         padding: 3em;
+     
     }
 }
 
@@ -1239,7 +1241,7 @@ i {
     &__fotos{
         flex-basis: 75%;
         background-color: white;
-        background-size: contain;
+        background-size: contain ;
         background-position: center;
         background-repeat: no-repeat;
         transition: all .3s ease-in-out;
