@@ -66,5 +66,8 @@ var banner = document.querySelector('.galeria__fotos');
     }
     botones.forEach(recorrerBotones);
 
+
+
+
 }
 window.addEventListener('load',paginaCargada);

@@ -112,6 +112,27 @@ var filtrosC = document.querySelectorAll('.filtros__color');
     }
     filtrosC.forEach(recorrerFiltrosC);
 
+    //--------------------Filtros--------------------
+
+//BANDA
+var sport= document.querySelector('.sport');
+var leather= document.querySelector('.leather');
+var steel= document.querySelector('.steel');
+
+function filtrarSport(){
+    location.href= '/tienda/Silver';
+}
+sport.addEventListener('click',filtrarSport);
+
+function filtrarLeather(){
+  location.href= '/tienda/Leather';
+}
+leather.addEventListener('click',filtrarLeather);
+
+function filtrarSteel(){
+  location.href= '/tienda/Steel';
+}
+steel.addEventListener('click',filtrarSteel);
 
 }
 

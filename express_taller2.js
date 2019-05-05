@@ -57,26 +57,36 @@ app.get('/',function(req,res){
 });
 
 //Ruta a la tienda
-app.get('/tienda', function(req, res) {
+app.get('/tienda/', function(req, res) {
 
     //Mongo: buscar documentos (Paso 3)
-    const productos = clientdb.collection('productos');
-    productos.find({}).toArray(function(err,docs){
-        assert.equal(null,err);
-       /* console.log('Encontrados los documentos');
-        docs.forEach(function(prod){
-            console.log(prod.nombre);
-        });*/
-
+    var productos = clientdb.collection('productos');
+    productos.find()
+	        .toArray(function(err, docs) {
         var contexto = {
-            listaProductos: docs
+            listaProductos: docs,
+           
         };
         res.render('tienda',contexto);
     });
 
-   /* var contexto = {
-        listaProductos: productos
-    };*/
+});
+
+//Ruta filtros
+app.get('/tienda/:filtro', function(req, res) {
+
+
+    var productos = clientdb.collection('productos');
+    productos.find({ $or: [ { banda: req.params.filtro }, { color: req.params.filtro } , { modelo: req.params.filtro }]})
+	        .toArray(function(err, docs) {
+        var contexto = {
+            listaProductos: docs,
+           
+        };
+        res.render('tienda',contexto);
+    });
+
+    
    
 });
 
@@ -90,11 +100,13 @@ app.get('/carrito', function(req, res) {
 
 
 
-//ruta dinamica
+/*ruta dinamica
 app.get('/tienda/:pestana', function(req, res) {
+
+    
     var contexto= null;
 
-    const productos = clientdb.collection('productos');
+    var productos = clientdb.collection('productos');
     productos.find({}).toArray(function(err,docs){
         assert.equal(null,err);
       
@@ -116,7 +128,7 @@ app.get('/tienda/:pestana', function(req, res) {
        
    });
 
-   
+   */
 
 
 
