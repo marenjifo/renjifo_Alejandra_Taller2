@@ -100,8 +100,8 @@ app.get('/carrito', function(req, res) {
 
 
 
-/*ruta dinamica
-app.get('/tienda/:pestana', function(req, res) {
+//ruta dinamica
+app.get('/tienda/prod/:pestana', function(req, res) {
 
     
     var contexto= null;
@@ -128,7 +128,7 @@ app.get('/tienda/:pestana', function(req, res) {
        
    });
 
-   */
+
 
 
 
