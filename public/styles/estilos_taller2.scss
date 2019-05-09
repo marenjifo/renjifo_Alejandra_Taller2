@@ -1491,11 +1491,28 @@ height: auto;
       flex-basis: 25%; 
       align-self: center;
       color: #686868;
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-right: 2em;
     }
 
     &__btn{
+        flex-basis: 5%; 
+        height: 50px;
+        align-self: center;
+        background-color: white;
+        border: 2px solid #C7C7C9;
+        color: #C7C7C9;
+        font-size: 1.3em;
+        transition: 0.4s;
+
+        &:hover{
+            cursor: pointer;
+            background-color: #686868;
+            color: white;
+        }
+
+    }
+    &__btn2{
         flex-basis: 5%; 
         height: 50px;
         align-self: center;

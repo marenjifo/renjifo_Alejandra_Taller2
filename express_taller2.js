@@ -15,8 +15,6 @@ client.connect(function(err) {
     assert.equal(null, err);
     console.log("Connected successfully to server");
     clientdb = client.db(dbName);
-
-  
    // client.close();
   });
 
@@ -107,13 +105,13 @@ app.get('/tienda/prod/:pestana', function(req, res) {
     var contexto= null;
 
     var productos = clientdb.collection('productos');
-    productos.find({}).toArray(function(err,docs){
+    productos.find({numero : req.params.pestana}).toArray(function(err,docs){
         assert.equal(null,err);
       
         docs.forEach(function(prod){
-            if(prod.numero == req.params.pestana){
+            
                 contexto=prod;
-            }
+            
         });
 
        

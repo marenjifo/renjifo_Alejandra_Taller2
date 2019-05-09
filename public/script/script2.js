@@ -39,9 +39,14 @@ $(document).ready(function() {
 
 
     //------------Para scroll suave-------------
+
+var flecha= document.querySelector('.nav-fija__enlace--icono');
+if(flecha!=null){
+
+
 $(document).ready(function(){
     // Add smooth scrolling to all links
-    $(".nav-fija__enlace--icono").on('click', function(event) {
+    $(flecha).on('click', function(event) {
   
       // Make sure this.hash has a value before overriding default behavior
       if (this.hash !== "") {
@@ -64,10 +69,11 @@ $(document).ready(function(){
     });
   });
 
-
+}
 
 
 //----------------------Para filtros del modelo--------------------
+
 var filtrosM = document.querySelectorAll('.filtros__filtrar--modelo');
 
     function recorrerFiltrosM(fil, index){
@@ -120,7 +126,7 @@ var leather= document.querySelector('.leather');
 var steel= document.querySelector('.steel');
 
 function filtrarSport(){
-    location.href= '/tienda/Silver';
+    location.href= '/tienda/Sport';
 }
 sport.addEventListener('click',filtrarSport);
 
@@ -133,6 +139,16 @@ function filtrarSteel(){
   location.href= '/tienda/Steel';
 }
 steel.addEventListener('click',filtrarSteel);
+
+//---------Numero carrito-------------
+
+var listaCarrito= [];
+
+    if(localStorage.getItem('listaCarrito')!=null){
+        listaCarrito = JSON.parse(localStorage.getItem('listaCarrito'));
+    }
+   var num_compra=document.querySelector('.nav-fija__compra');
+   num_compra.innerHTML = listaCarrito.length;
 
 }
 
