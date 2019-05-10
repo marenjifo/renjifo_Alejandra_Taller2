@@ -126,17 +126,17 @@ var leather= document.querySelector('.leather');
 var steel= document.querySelector('.steel');
 
 function filtrarSport(){
-    location.href= '/tienda/Sport';
+    location.href= '/tienda/Sport/#sec-tienda';
 }
 sport.addEventListener('click',filtrarSport);
 
 function filtrarLeather(){
-  location.href= '/tienda/Leather';
+  location.href= '/tienda/Leather/#sec-tienda';
 }
 leather.addEventListener('click',filtrarLeather);
 
 function filtrarSteel(){
-  location.href= '/tienda/Steel';
+  location.href= '/tienda/Steel/#sec-tienda';
 }
 steel.addEventListener('click',filtrarSteel);
 
@@ -151,5 +151,7 @@ var listaCarrito= [];
    num_compra.innerHTML = listaCarrito.length;
 
 }
+
+
 
 window.addEventListener('load',paginaCargada);

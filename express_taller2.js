@@ -127,7 +127,13 @@ app.get('/tienda/prod/:pestana', function(req, res) {
    });
 
 
-
+//Ruta al checkout
+app.get('/pago', function(req, res) {
+    var contexto = {
+       
+    };
+    res.render('pago',contexto);
+});
 
 
 // Escuchar desde puerto 3000

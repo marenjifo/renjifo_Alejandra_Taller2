@@ -62,9 +62,9 @@
                 <ul class="filtros__lista">
                 
                   <li class="filtros__item"><h2 class="filtros__titulo">MODEL</h2></li>
-                  <li class="filtros__item"> <p class="filtros__filtrar filtros__filtrar--modelo" onclick="location.href='/tienda/SERIES 4';">Series 4</p> </li>
-                  <li class="filtros__item"> <p class="filtros__filtrar filtros__filtrar--modelo" onclick="location.href='/tienda/NIKE +';">Nike +</p> </li>
-                  <li class="filtros__item"> <p class="filtros__filtrar filtros__filtrar--modelo" onclick="location.href='/tienda/HERMÈS';">Hèrmes</p> </li>
+                  <li class="filtros__item"> <p class="filtros__filtrar filtros__filtrar--modelo" onclick="location.href='/tienda/SERIES 4/#sec-tienda';">Series 4</p> </li>
+                  <li class="filtros__item"> <p class="filtros__filtrar filtros__filtrar--modelo" onclick="location.href='/tienda/NIKE +/#sec-tienda';">Nike +</p> </li>
+                  <li class="filtros__item"> <p class="filtros__filtrar filtros__filtrar--modelo" onclick="location.href='/tienda/HERMÈS/#sec-tienda';">Hèrmes</p> </li>
 
                   <li class="filtros__item"><h2 class="filtros__titulo">BAND TYPE</h2></li>
                   <li class="filtros__item"> <p class="filtros__filtrar filtros__filtrar--banda sport">Sport</p> </li>
@@ -77,11 +77,11 @@
 
                 <ul class="filtros__lista--colores">
 
-                    <li class="filtros__item"> <div class="filtros__color" style=" background-color: #2F2F2F" onclick="location.href='/tienda/Black';"></div> </li>
-                     <li class="filtros__item"> <div class="filtros__color" style=" background-color: #E8E8E8" onclick="location.href='/tienda/Silver';"></div> </li>
-                      <li class="filtros__item"> <div class="filtros__color" style=" background-color: #FFD6CA" onclick="location.href='/tienda/Pink';"></div> </li>
-                       <li class="filtros__item"> <div class="filtros__color" style=" background-color: #002070" onclick="location.href='/tienda/Blue';"></div> </li>
-                        <li class="filtros__item"> <div class="filtros__color" style=" background-color: #B1937D" onclick="location.href='/tienda/Brown';"></div> </li>
+                    <li class="filtros__item"> <div class="filtros__color" style=" background-color: #2F2F2F" onclick="location.href='/tienda/Black/#sec-tienda';"></div> </li>
+                     <li class="filtros__item"> <div class="filtros__color" style=" background-color: #E8E8E8" onclick="location.href='/tienda/Silver/#sec-tienda';"></div> </li>
+                      <li class="filtros__item"> <div class="filtros__color" style=" background-color: #FFD6CA" onclick="location.href='/tienda/Pink/#sec-tienda';"></div> </li>
+                       <li class="filtros__item"> <div class="filtros__color" style=" background-color: #002070" onclick="location.href='/tienda/Blue/#sec-tienda';"></div> </li>
+                        <li class="filtros__item"> <div class="filtros__color" style=" background-color: #B1937D" onclick="location.href='/tienda/Brown/#sec-tienda';"></div> </li>
                         
 
                 </ul>
@@ -89,7 +89,7 @@
 
             </div>
 
-             <!--Seccion de productos-->
+             <!--Seccion de productos  onclick="location.href='/tienda/prod/{{this.numero}}';"-->
 
             <div class="tienda__productos">
 
@@ -97,16 +97,22 @@
 
                 {{#each listaProductos}}
 
-                 <div class="producto" onclick="location.href='/tienda/prod/{{this.numero}}';">
+                 <div class="producto" >
 
-                    <div class="producto__banner" style=" background-image: url(/imagenes/{{this.imagenes.[0]}}"></div>
+                    <div class="producto__banner" onclick="location.href='/tienda/prod/{{this.numero}}';" style=" background-image: url(/imagenes/{{this.imagenes.[0]}}"></div>
 
-                    <div class="producto__info">
+                    <div class="producto__info" >
                     <p class="producto__info--item producto__modelo">{{this.modelo}}</p>
                     <p class="producto__info--item producto__nombre">{{this.nombre}}</p>
-                     <p class="producto__info--item producto__precio">${{this.precio}}</p>
 
+                    <div class="producto__contBtn">
+                     <p class="producto__info--item producto__precio">${{this.precio}}</p>
+                      <button class="producto__info--item producto__btn">ADD TO BAG</button>
+                </div>
                      </div>
+                   
+                    
+                  
                   
                 </div>
 
@@ -135,6 +141,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="/script/script2.js"></script>
+     <script src="/script/script3.js"></script>
 
 </body>
 </html>

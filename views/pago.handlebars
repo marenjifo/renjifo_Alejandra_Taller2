@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout | Apple Watch</title>
+    <link rel="stylesheet" href="/styles/estilos_taller2.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Open+Sans+Condensed:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+    <div class="app">
+
+   
+        <div class="nav-fija nav-fija--blanca" id="miNav">
+                        <ul class="nav-fija__bar">
+                            <li class="nav-fija__icono nav-fija__icono--blanco"><i class="fab fa-apple"></i></li>
+                            <li class="nav-fija__item nav-fija__item--blanco">  <a href="/" class="nav-fija__enlace nav-fija__enlace--blanco"> HOME </a></li>
+                            <li class="nav-fija__item nav-fija__item--blanco">PRODUCTS</li>
+                            <li class="nav-fija__item nav-fija__item--blanco">SUPPORT</li>
+                            <li class="nav-fija__item nav-fija__item--blanco">ABOUT US</li>
+                            <li class="nav-fija__icono nav nav-fija__icono--blanco"><a href="/carrito" class="nav-fija__enlace nav-fija__enlace--blanco"><i data-feather="shopping-bag"></i> <h2 class="nav-fija__compra">0</h2> </a> </li>
+                            <li class="nav-fija__item nav-fija__item--blanco menu" > <i class="fa fa-bars"></i>
+                            </li>
+                            
+                        </ul>
+                        
+                    </div>
+ <article class="cont-pago">
+         <h2 class="cont-pago__titulo">CHECKOUT.</h2>
+
+        <article class="pago">
+
+            <form class="pago__formularios">
+
+                <h2 class="formularios__titulo">Contact information</h2>
+
+                <input type="text" placeholder="email" class="formularios__item formularios__correo">
+
+                <input type="text" placeholder="phone" class="formularios__item formularios__telefono">
+
+                <h2 class="formularios__titulo">Delivery information</h2>
+
+                <div class="formularios__horizontal">
+
+                    <input type="text" placeholder="First Name" class="formularios__item formularios__nombre">
+
+                <input type="text" placeholder="Last Name" class="formularios__item formularios__apellido">
+
+                </div>
+
+                <input type="text" placeholder="Address" class="formularios__item formularios__direccion">
+
+                <input type="text" placeholder="Country" class="formularios__item formularios__direccion">
+
+                <div class="formularios__horizontal">
+
+                    <select class="formularios__item formularios__estado">
+                        <option value="" disabled selected>State</option>
+                 <option value="California">California</option>
+                <option value="Florida">Florida</option>
+                <option value="Texas">Texas</option>
+                <option value="Washington">Washington</option>
+                </select>
+
+                
+                <input type="text" placeholder="City" class="formularios__item formularios__ciudad">
+
+                <input type="text" placeholder="Zip Code" class="formularios__item formularios__zip">
+
+                </div>
+
+                <h2 class="formularios__titulo">Payment</h2>
+
+                  <div class="formularios__horizontal">
+                <i class="fab fa-cc-visa formularios__tarjeta"></i>
+
+                <i class="fab fa-cc-mastercard formularios__tarjeta"></i>
+                </div>
+
+                <input type="text" placeholder="Card Number" class="formularios__item formularios__num-tar">
+
+                <h2 class="formularios__titulo formularios__titulo--pequeno">Expiration Date</h2>
+
+                 <div class="formularios__horizontal">
+
+                <select class="formularios__item formularios__fecha">
+                        <option value="" disabled selected>Year</option>
+                 <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                </select>
+
+                <select class="formularios__item formularios__fecha">
+                        <option value="" disabled selected>Month</option>
+                 <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option value="Mar">Mar</option>
+                <option value="Apr">Apr</option>
+                <option value="May">May</option>
+                <option value="Jun">Jun</option>
+                <option value="Jul">Jul</option>
+                <option value="Aug">Aug</option>
+                <option value="Sep">Sep</option>
+                <option value="Oct">Oct</option>
+                <option value="Nov">Nov</option>
+                <option value="Dec">Dec</option>
+                </select>
+
+                <input type="text" placeholder="CVV" class="formularios__item formularios__cvv">
+
+               
+            </div>
+
+             <input type="text" placeholder="Full name on card" class="formularios__item formularios__nombre-tarjeta"> 
+
+             <input type="submit" value="BUY NOW" class="formularios__btn">
+
+            </form>
+
+
+           
+            <section class="carrito__resumen carrito__resumen--pequeno">
+                <ul class="resumen__lista">
+                  <p class="resumen__titulo">SUMMARY.</p>
+                    <li class="resumen__item resumen__num-prod">  <p class="resumen__cantidad">2 PRODUCTS</p></li>
+                    <li class="resumen__item">  <p class="resumen__subtotal">Subtotal</p> <p class="resumen__num-sub">$899</p></li>
+
+                    <li class="resumen__item resumen__envio">  <p class="resumen__subtotal">Shipping</p> <p class="resumen__num-sub">FREE</p></li>
+
+                    <li class="resumen__item">  <p class="resumen__total">Total</p> <p class="resumen__num-total">$899</p></li>
+
+
+                    </ul>
+
+                    
+            </section>
+
+
+
+        </article>
+        </article>
+
+     </div>
+
+
+
+     <!--Archivos de javaScript -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="/script/script3.js"></script>
+    
+</body>
+</html>
