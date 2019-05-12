@@ -23,6 +23,7 @@ var app = express();
 
 //Establecer la carpeta public como estatica
 app.use(express.static('public'));
+app.use(express.urlencoded({extended:true}));
 
 //Registro de handlebars
 app.engine('handlebars',exphbs());
@@ -125,14 +126,43 @@ app.get('/tienda/prod/:pestana', function(req, res) {
       
        
    });
-
-
-//Ruta al checkout
+//Ruta al carrito
 app.get('/pago', function(req, res) {
+   
     var contexto = {
        
     };
     res.render('pago',contexto);
+});
+
+//Ruta al checkout
+app.post('/checkout', function(req, res) {
+    
+    var pedido = {
+       correo:req.body.correo,
+       telefono:req.body.telefono,
+       nombre:req.body.nombre,
+       apellido:req.body.apellido,
+       direccion:req.body.direccion,
+       pais:req.body.pais,
+       estado:req.body.estado,
+       ciudad:req.body.ciudad,
+       zip:req.body.zip,
+       tarjeta:req.body.tarjeta,
+       fecha:req.body.fecha,
+       mes:req.body.mes,
+       cvv:req.body.cvv,
+       nombre__tarjeta:req.body.nombre__tarjeta
+       
+    };
+
+    var collection=clientdb.collection('pedidos');
+    collection.insertOne(pedido,function(err){
+        assert.equal(err,null);
+        console.log("Pedido Guardado");
+
+    });
+    res.redirect('/');
 });
 
 

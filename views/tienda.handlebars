@@ -17,7 +17,7 @@
        
             
          <!--Encabezado y barra de navegacion-->
-        <header class="app__encabezado" >
+        <header class="app__encabezado--tienda" >
             
             <div class="nav-fija" id="miNav">
                 <ul class="nav-fija__bar">
@@ -35,12 +35,12 @@
             </div>
             
             <!--Informacion dentro del encabezado-->
-            <div class="contenedor-prin" style=" background-image: url(/imagenes/banner-tiendaT.png)">
-            <div class="contenedor-prin__arriba">
+            <div class="contenedor-prin contenedor-prin--tienda">
+            <div class="contenedor-prin__arriba contenedor-prin__arriba--tienda">
                 <h1 class="app__titulo-producto app__titulo-producto--grande">Choose <br> wisely</h1>
            
                     </div>
-            <div class="contenedor-prin__abajo">
+            <div class="contenedor-prin__abajo contenedor-prin__abajo--tienda">
 
                   
                     <a href="#sec-tienda" class="nav-fija__enlace nav-fija__enlace--icono"><i class="fas fa-chevron-down"></i>
@@ -57,7 +57,12 @@
 
      <!--Seccion de filtros-->
 
+        <div class="tienda__responsive">
+
+            <h2 class="filtros__titulo-responsive">FILTER BY <i class="fas fa-chevron-down"></i></h2>
             <div class="tienda__filtros">
+
+                
 
                 <ul class="filtros__lista">
                 
@@ -87,6 +92,7 @@
                 </ul>
 
 
+            </div>
             </div>
 
              <!--Seccion de productos  onclick="location.href='/tienda/prod/{{this.numero}}';"-->

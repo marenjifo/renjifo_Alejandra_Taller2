@@ -37,6 +37,22 @@ $(document).ready(function() {
     });
 });
 
+//-----------Para la barra de navegacion responsive-----------------
+var menu=document.querySelector('.menu');
+function menuHamb() {
+    var x = document.querySelector("#miNav");
+    if (x.className === "nav-fija") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav-fija";
+    }
+  }
+
+  if(menu!=null){
+    menu.addEventListener('click',menuHamb);
+  }
+
+
 
     //------------Para scroll suave-------------
 
@@ -149,6 +165,24 @@ var listaCarrito= [];
     }
    var num_compra=document.querySelector('.nav-fija__compra');
    num_compra.innerHTML = listaCarrito.length;
+
+//-----------Responsive de los filtros-------------
+var filtros=document.querySelector('.tienda__filtros');
+var res__filtros=document.querySelector('.tienda__responsive');
+if(filtros!=null && res__filtros!=null){
+  function abrirFiltros(){
+   
+    if(filtros.style.display=='block'){
+      filtros.style.display= 'none';
+    }else{
+      filtros.style.display= 'block';
+    }
+    
+  }
+
+  res__filtros.addEventListener('click',abrirFiltros);
+
+}
 
 }
 

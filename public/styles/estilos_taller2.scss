@@ -35,6 +35,13 @@ html{
         background-size: cover;
         display: flex;
         flex-direction: column;
+
+        &--tienda{
+        flex-basis: 100vh;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        }
         
     }
     
@@ -43,7 +50,7 @@ html{
         margin-bottom: 0.3em;
         color: $color-blanco;
         font-family: $tipo-titulos;
-
+        
         &--grande{
             font-size: 6em;
         }
@@ -100,12 +107,12 @@ html{
         background-color: $color-blanco;
         border-bottom: 2px solid #AFAFAF;
     }
-
+    
     &--blanca{
         background-color: $color-blanco;
         border-bottom: 2px solid #AFAFAF;
     }
-   
+    
     
     &__bar{
         background-color: transparent;
@@ -134,15 +141,15 @@ html{
         &:hover{
             transform: scale(1.1);
         }
-
+        
         &.solid-bar{
             color: $color-gris;
         }
-
+        
         &--blanco{
             color: $color-gris;
         }
-
+        
         
     }
     
@@ -175,7 +182,7 @@ html{
             }
             
         }
-
+        
         &.solid-bar{
             color: $color-gris;
             &:hover{
@@ -199,26 +206,26 @@ html{
             }
         }
     }
-
+    
     &__enlace{
         text-decoration: none;
         color: white;
         display: flex;
         align-items: center;
-
+        
         &:visited{
             text-decoration: none;
-        color: white;
+            color: white;
         }
-
+        
         &.solid-bar{
             color: $color-gris;
         }
-
+        
         &--icono{
             font-size: 3em;
         }
-
+        
         &--blanco{
             color: $color-gris;
             &:visited{
@@ -226,10 +233,10 @@ html{
                 color: $color-gris;
             }
         }
-
+        
         
     }
-
+    
     &__compra{
         font-size: 0.7em;
         font-family: $tipo-titulos;
@@ -256,17 +263,24 @@ html{
     flex-direction: column;
     justify-content: center;
     background-size: cover;
-
+    background-image: none;
+    
+    &--tienda{
+        
+        background-image: url(/imagenes/banner-tienda.png);
+    }
+    
     &__arriba{
         flex-basis: 75vh;
-       //background-color: red;
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       padding-left: 6em;
-       
+        //background-color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 6em;
+        
+        
     }
-
+    
     &__abajo{
         flex-basis: 13vh;
         //background-color: red;
@@ -292,6 +306,8 @@ html{
             border-radius: 2em;
         }
     }
+    
+    
 }
 
 //---------------Introduccion del producto--------------//
@@ -1015,105 +1031,109 @@ i {
 //---------------Tienda de productos--------------//
 
 .tienda{
-
+    
     background-color: #F2F2F2;
     width: 100%;
     height: auto;
     display: flex;
     padding-top: 3em;
     
-
+    
     &__filtros{
         flex-basis: 15%;
-       //background-color: blue;
+        //background-color: blue;
         padding: 2em;
         padding-top: 1em;
         display: flex;
         flex-direction: column;
-       
+        
     }
-
+    
     &__productos{
         flex-basis: 85%;
         //background-color: chocolate;
         display: flex;
         flex-wrap: wrap;
         padding: 3em;
-     
+        
     }
 }
 
 //---------------Seccion de filtros--------------//
 .filtros{
 
+    &__titulo-responsive{
+        display: none;
+    }
+    
     &__lista{
         list-style-type: none;
-
+        
         &--colores{
             list-style-type: none;
             display: flex;
         }
-      }
-
-      &__item{
-         
-          padding: 0.5em;
-      }
-
-      &__titulo{
-          font-family: $tipo-titulos;
-          margin-top: 1.5em;
-          color: #515151;
-      }
-
-      &__filtrar{
-          color: #686868;
-          width: 100%;
-          padding: 0.3em;
-          &:hover{
+    }
+    
+    &__item{
+        
+        padding: 0.5em;
+    }
+    
+    &__titulo{
+        font-family: $tipo-titulos;
+        margin-top: 1.5em;
+        color: #515151;
+    }
+    
+    &__filtrar{
+        color: #686868;
+        width: 100%;
+        padding: 0.3em;
+        &:hover{
             cursor: pointer;
             background-color: #E5E5E5;
-          }
-
-          &--modelo{
-
+        }
+        
+        &--modelo{
+            
             &.active{
                 cursor: pointer;
                 background-color: #E5E5E5;
-              }
-
-          }
-
-          &--banda{
+            }
+            
+        }
+        
+        &--banda{
             &.active{
                 cursor: pointer;
                 background-color: #E5E5E5;
-              }
-          }
-          
-      }
-
-      &__color{
+            }
+        }
+        
+    }
+    
+    &__color{
         transition: all .3s ease-in-out;
-          width: 1.5em;
-          height: 1.5em;
-          border-radius: 50%;
-          opacity: 0.6;
-
-          &:hover {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        opacity: 0.6;
+        
+        &:hover {
             box-shadow: inset 0 0 0.3em rgba(87, 87, 87, 0.336);
             cursor: pointer;
-          opacity: 1;
-          }
-
-          &.active{
+            opacity: 1;
+        }
+        
+        &.active{
             box-shadow: inset 0 0 0.3em rgba(87, 87, 87, 0.336);
             cursor: pointer;
-          opacity: 1;
-          }
-         
-      }
-
+            opacity: 1;
+        }
+        
+    }
+    
 }
 //---------------Contenedor de producto--------------//
 .producto:hover .producto__btn{
@@ -1132,17 +1152,17 @@ i {
     &:hover{
         box-shadow: 8px 8px 10px 0px rgba(230,230,230,1);
         cursor: pointer;
-
+        
     }
-
-
+    
+    
     &__banner{
         flex-basis: 65%;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
-
+    
     &__info{
         flex-basis: 35%;
         display: flex;
@@ -1150,28 +1170,28 @@ i {
         justify-content: center;
         padding: 0 1.3em;
         //background-color: gray;
-
+        
         &--item{
             margin: 0.2em 0;
         }
     }
-
+    
     &__modelo{
         color: #B1B1B2;
         font-size: 0.9em;
-
+        
         &--grande{
             font-size: 1.7em;
         }
     }
-
+    
     &__nombre{
         color: #686868;
         &--grande{
             font-size: 2.5em;
         }
     }
-
+    
     &__precio{
         color: #515151;
         font-family: $tipo-titulos;
@@ -1180,13 +1200,13 @@ i {
             font-size: 3em;
         }
     }
-
+    
     &__contBtn{
         display: flex;
         justify-content: space-between;
         margin: 0.7em 0;
     }
-
+    
     &__btn{
         opacity: 0;
         font-size: 1em;
@@ -1204,7 +1224,7 @@ i {
             cursor: pointer;
         }
     }
-
+    
 }
 
 //---------------Pagina de producto individual--------------//
@@ -1215,7 +1235,7 @@ i {
     background-color: #F2F2F2;
     display: flex;
     padding: 3.5em;
-
+    
     &__galeria{
         flex-basis: 55%;
         width: 50%;
@@ -1223,7 +1243,7 @@ i {
         height: 100%;
         display: flex;
     }
-
+    
     &__carac{
         flex-basis: 45%;
         width: 50%;
@@ -1233,11 +1253,11 @@ i {
         display: flex;
         flex-direction: column;
     }
-
+    
 }
 
 .galeria{
-
+    
     &__selector{
         flex-basis: 25%;
         //background-color: pink;
@@ -1246,7 +1266,7 @@ i {
         justify-content: space-between;
         padding: 0 1em;
     }
-
+    
     &__miniatura{
         transition: all .3s ease-in-out;
         flex-basis: 25%;
@@ -1259,12 +1279,12 @@ i {
             opacity: 1;
             cursor: pointer;
         }
-
+        
         &.active{
             opacity: 1;
         }
     }
-
+    
     &__fotos{
         flex-basis: 75%;
         background-color: white;
@@ -1276,27 +1296,27 @@ i {
 }
 
 .carac{
-
+    
     &__titulos{
         flex-basis: 35%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-       //background-color: gray;
-       
-
+        //background-color: gray;
+        
+        
         &--item{
             margin: 0.2em 0;
         }
     }
-
+    
     &__filtros{
         flex-basis: 40%;
         //background-color: red;
         display: flex;
         
     }
-
+    
     &__btn{
         font-size: 2em;
         padding: 0.2em;
@@ -1306,14 +1326,14 @@ i {
         transition: 0.7s;
         font-family: $tipo-titulos;
         background-color: #F2F2F2;
-       
+        
         &:hover{
             box-shadow: inset 0 -3em 0 0 #515151;  
             color: white;
             cursor: pointer;
         }
     }
-
+    
     &__contF{
         display: flex;
         flex-direction: column;
@@ -1324,57 +1344,57 @@ i {
         height: 100%;
         margin-right: 1em;
     }
-
+    
     &__nombreColor{
         color:#686868;
         font-size: 1.5em;
         margin-top: 0.4em;
     }
-
+    
     &__color{
         
-          width: 3em;
-          height: 3em;
-          border-radius: 50%;
-      }
-
-      &__banda{
-
-          width: 3em;
-          height: 3em;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center;
-         
-      }
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+    }
+    
+    &__banda{
+        
+        width: 3em;
+        height: 3em;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    }
 }
 
 
 //--------------Detalles del producto-------------------//
 .detalles{
-
+    
     background-color: #F2F2F2;
     padding: 3.5em;
     height: 90vh;
     display: flex;
     flex-direction: column;
-
+    
     &__titulo{
-
-            font-size: 4.5em;
-           margin-bottom: 0.4em;
-            color: #515151;
-            font-family: $tipo-titulos;
-       
-
+        
+        font-size: 4.5em;
+        margin-bottom: 0.4em;
+        color: #515151;
+        font-family: $tipo-titulos;
+        
+        
     }
-
+    
     &__tabla{
         display: flex;
-       flex-basis: 100%;
+        flex-basis: 100%;
         background-color: #F2F2F2;
     }
-
+    
     &__img{
         background-size: contain;
         background-position: center;
@@ -1382,16 +1402,16 @@ i {
         background-repeat: no-repeat;
         background-color: #F2F2F2;
     }
-
+    
 }
 
 .pestanas{
-
+    
     flex-basis: 60%;
     &__botones{
         display: flex;
     }
-
+    
     &__btn{
         font-size: 2em;
         padding: 0.5em;
@@ -1413,7 +1433,7 @@ i {
             cursor: pointer;
         }
     }
-
+    
     &__seccion{
         display: none;
         padding: 1.3em 0.3em;
@@ -1421,18 +1441,18 @@ i {
             display: block;
         }
     }
-
+    
     &__texto{
         font-size: 1.5em;
         color: $color-gris;
-       
+        
     }
-
+    
     &__lista{
         list-style-position: inside; 
         list-style-type: square;
     }
-
+    
     &__item{
         font-size: 1.5em;
         padding: 0.5em 0;
@@ -1450,42 +1470,42 @@ i {
     padding: 2.5em;
 }
 .carrito{
-
-   
+    
+    
     width: 100%;
     height: auto;
     display: flex;
-   
-
-   &__titulo{
-    font-size: 4.5em;
-    margin-bottom: 0.4em;
-     color: #515151;
-     font-family: $tipo-titulos;
-   }
-
-   &__productos{
-    flex-basis: 70%;
-    background-color: white;
-margin-right: 2em;
-height: auto;
-
-   }
-
-
-   &__resumen{
-    flex-basis: 30%;
-    background-color: white;
-    height: 26em;
-    //height: auto;
-    padding: 2em;
-    border: 2px solid #AFAFAF;
-
-    &--pequeno{
-        height: 22em;
+    
+    
+    &__titulo{
+        font-size: 4.5em;
+        margin-bottom: 0.4em;
+        color: #515151;
+        font-family: $tipo-titulos;
     }
-
-   }
+    
+    &__productos{
+        flex-basis: 70%;
+        background-color: white;
+        margin-right: 2em;
+        height: auto;
+        
+    }
+    
+    
+    &__resumen{
+        flex-basis: 30%;
+        background-color: white;
+        height: 26em;
+        //height: auto;
+        padding: 2em;
+        border: 2px solid #AFAFAF;
+        
+        &--pequeno{
+            height: 22em;
+        }
+        
+    }
 }
 
 .lista-productos{
@@ -1495,38 +1515,38 @@ height: auto;
     background-color: white;
     margin: 0 auto;
     padding: 1em 2em;
-
+    
     &__item{
         flex-basis: 10em;
         background-color: white;
         margin-bottom: 1em;
         display: flex;
-       text-align: center;
-       justify-content: center;
-       border-bottom: 1px solid #C7C7C9;
+        text-align: center;
+        justify-content: center;
+        border-bottom: 1px solid #C7C7C9;
     }
 }
 
 .item-carro{
-
+    
     &__img{
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
         flex-basis: 25%;
         margin: 0;
-       
-     
+        
+        
     }
-
+    
     &__nombre{
-      flex-basis: 25%; 
-      align-self: center;
-      color: #686868;
-    font-size: 1.1em;
-    margin-right: 2em;
+        flex-basis: 25%; 
+        align-self: center;
+        color: #686868;
+        font-size: 1.1em;
+        margin-right: 2em;
     }
-
+    
     &__btn{
         flex-basis: 5%; 
         height: 50px;
@@ -1536,13 +1556,13 @@ height: auto;
         color: #C7C7C9;
         font-size: 1.3em;
         transition: 0.4s;
-
+        
         &:hover{
             cursor: pointer;
             background-color: #686868;
             color: white;
         }
-
+        
     }
     &__btn2{
         flex-basis: 5%; 
@@ -1553,15 +1573,15 @@ height: auto;
         color: #C7C7C9;
         font-size: 1.3em;
         transition: 0.4s;
-
+        
         &:hover{
             cursor: pointer;
             background-color: #686868;
             color: white;
         }
-
+        
     }
-
+    
     &__cantidad{
         flex-basis: 5%;
         align-self: center;
@@ -1574,14 +1594,14 @@ height: auto;
         flex-direction: column;
         justify-content: center;
     }
-
+    
     &__precio{
         flex-basis: 20%;
         align-self: center;
         color: #686868;
         font-size: 1.5em;
     }
-
+    
     &__eliminar{
         flex-basis: 10%;
         align-self: center;
@@ -1596,21 +1616,21 @@ height: auto;
 }
 
 .resumen{
-
+    
     &__titulo{
         font-family: $tipo-titulos;
         font-size: 2em;
         color: #515151;
         text-align: center;
-       
+        
     }
-
+    
     &__lista{
         list-style-type: none;
         display: flex;
         flex-direction: column;
     }
-
+    
     &__item{
         display: flex;
         flex-direction: row;
@@ -1620,31 +1640,31 @@ height: auto;
         color: #686868;
         padding: 0.5em 0;
     }
-
+    
     &__cantidad{
         border-bottom: 1px solid #C7C7C9;
         padding: 1em 0;
-      
+        
     }
-
+    
     &__num-prod{
         display: flex;
         flex-direction: column;
     }
-
+    
     &__envio{
         border-bottom: 1px solid #C7C7C9;
         padding-bottom: 1em;
     }
-
+    
     &__total{
         font-size: 1.3em;
     }
-
+    
     &__num-total{
         font-size: 1.3em;
     }
-
+    
     &__btn{
         font-size: 2em;
         padding: 0.2em;
@@ -1656,18 +1676,18 @@ height: auto;
         background-color: white;
         align-self: center;
         margin: 0.5em 0;
-       
+        
         &:hover{
             box-shadow: inset 0 -3em 0 0 #515151;  
             color: white;
             cursor: pointer;
         }
     }
-
+    
 }
 
 
-//---------------Carrito de compras--------------//
+//---------------Pagina de pago--------------//
 
 .cont-pago{
     background-color: #F2F2F2;
@@ -1675,33 +1695,33 @@ height: auto;
     height: auto;
     margin-top: 12vh;
     padding: 2.5em;
-
+    
     &__titulo{
         font-size: 4.5em;
         margin-bottom: 0.4em;
-         color: #515151;
-         font-family: $tipo-titulos;
-       }
+        color: #515151;
+        font-family: $tipo-titulos;
+    }
 }
 .pago{
-   
+    
     width: 100%;
     height: auto;
     display: flex;
-   
-
-   
-
-   &__formularios{
-flex-basis: 70%;
-height: auto;
-display:flex;
-flex-direction: column;
-
-   }
-
-  
-
+    
+    
+    
+    
+    &__formularios{
+        flex-basis: 70%;
+        height: auto;
+        display:flex;
+        flex-direction: column;
+        
+    }
+    
+    
+    
 }
 ::placeholder{
     color: #AFAFAF;
@@ -1711,12 +1731,12 @@ flex-direction: column;
         color: #AFAFAF;
         font-family: $tipo-titulos;
         margin-bottom: 1em;
-
+        
         &--pequeno{
             font-size: 1em;
         }
     }
-
+    
     &__item{
         padding: 0.7em;
         font-size: 1em;
@@ -1726,22 +1746,22 @@ flex-direction: column;
         margin-right: 1em;
         border: 1px solid #AFAFAF;
     }
-
+    
     &__horizontal{
         display: flex;
     }
-
+    
     &__estado, &__ciudad,&__zip, &__fecha, &__mes, &__cvv{
         width: 16.6%;
     }
-
+    
     &__tarjeta{
         color:#AFAFAF;
         font-size: 3em;
         margin-right: 0.5em;
         margin-bottom: 0.5em;
     }
-
+    
     &__btn{
         font-size: 2em;
         padding: 0.2em;
@@ -1751,9 +1771,9 @@ flex-direction: column;
         transition: 0.7s;
         font-family: $tipo-titulos;
         background-color: transparent;
-       
+        
         margin: 0.5em 0;
-       
+        
         &:hover{
             box-shadow: inset 0 -3em 0 0 #515151;  
             color: white;
@@ -1777,17 +1797,22 @@ select{
 
 //---------------Responsive de la página--------------//
 
-@media (max-width:450px){
+@media (max-width:500px){
     .app{
-        //  background-color: red;
+       // background-color: red;
         
         
         &__encabezado{
             
-            background-image: url(/imagenes/banner-responsive.png);
+            // background-image: url(/imagenes/banner-responsive.png);
             background-position: bottom;
             background-size: 45%;
             background-repeat: no-repeat;
+
+            &--tienda{
+                background-color: #141414;
+                flex-basis: 50vh;   
+            }
             
         }
         
@@ -1809,58 +1834,59 @@ select{
         
         
     }
-
-//-----------------RES-Barra de navegacion-------------------//
-
-.nav-fija{
-    padding: 0 2em;
     
-    &__bar{
-      
-        justify-content: space-between;
+    
+    //-----------------RES-Barra de navegacion-------------------//
+    
+    .nav-fija{
+        padding: 0 2em;
+        
+        &__bar{
+            
+            justify-content: space-between;
+            
+        }
+        
+        
+        &__item{
+            display: none;
+        }
+        
+        
         
     }
     
-   
-    &__item{
-        display: none;
+    .nav-fija.responsive {
+        position: relative;
     }
-
-
+    .nav-fija.responsive .menu {
+        
+    }
+    .nav-fija.responsive .nav-fija__item {
+        display: block;
+        margin-bottom: 0.5em;
+        //background-color: red;
+        
+    }
+    .nav-fija.responsive .nav-fija__bar{
+        
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        position: absolute;
+    }
     
-}
-
-.nav-fija.responsive {
-  position: relative;
-   }
-.nav-fija.responsive .menu {
-  
- }
- .nav-fija.responsive .nav-fija__item {
-  display: block;
-  margin-bottom: 0.5em;
- //background-color: red;
- 
- }
- .nav-fija.responsive .nav-fija__bar{
-  
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    position: absolute;
-  }
-
-.menu{
-    display: block;
-}
-
-
-
+    .menu{
+        display: block;
+    }
+    
+    
+    
     
     //---------------RES-Contenedor principal con banner--------------//
     
     .contenedor-prin{
-        // background-color: green;
+        
         width: 100%;
         
         flex-basis: 40vh;
@@ -1875,6 +1901,31 @@ select{
             font-size: 0.8em;
             width: 20vh;
         }
+        
+        &--tienda{
+         // background-color: green;
+            background-image: url(/imagenes/bannerTiendaR.png);
+            width: 100%;
+            flex-basis: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-size: cover;
+        }
+
+        &__arriba--tienda{
+           // background-color: red;
+            text-align: left;
+            flex-basis: 40vh;
+          display: flex;
+          flex-direction: column;
+             width: 100%;
+          justify-content: center;
+          padding: 4em;
+        }
+        &__abajo--tienda{
+          display: none;
+    }
     }
     
     
@@ -1958,13 +2009,13 @@ select{
         &__zoom{
             // background-color: aqua;
             margin-right: 1em;
-
+            
             
             
         }
         
         &__texto{
-           //background-color: red;
+            //background-color: red;
             flex-basis: 45%;
             padding: 2em;
             display: flex;
@@ -1973,9 +2024,9 @@ select{
             
             
         }
-
+        
         &__imagen{
-          //  background-color: red;
+            //  background-color: red;
             width: 35vh;
             margin-left: -1em;
         }
@@ -2049,168 +2100,695 @@ select{
         }
     }
     
-
-
-//---------------RES-Interaccion del producto--------------//
-
-.interaccion{
     
-    padding: 0 4em;
-    margin: 1em 0;
-    flex-direction: column;
     
-    &__apps{
-        padding: 0.9em;
+    //---------------RES-Interaccion del producto--------------//
+    
+    .interaccion{
+        
+        padding: 0 4em;
+        margin: 1em 0;
+        flex-direction: column;
+        
+        &__apps{
+            padding: 0.9em;
+        }
+        
+        &__btn, &__btn2{
+            
+            width: 2.3em;
+            height: 2.3em;
+            
+            
+        }
+        
+        &__titulo{
+            font-size: 1em;
+            margin: 1em 0;
+            
+        }
+        
+        
     }
     
-    &__btn, &__btn2{
+    //---------------RES-Segunda publicidad del producto--------------//
+    
+    .promo2{
+        
+        &__zoom{
+            
+            display: none;
+            
+            
+            &2{
+                
+                justify-content: center;
+                
+            }
+        }
+        
+    }
+    
+    
+    //---------------RES-Newsletter--------------//
+    
+    .newsletter{
+        width: 80%;
+        flex-basis: auto;
+        height: auto;
+        padding:0em;
+        margin-bottom: -2em;
+        display: flex;
+        
+        flex-direction: column;
+        
+        
+        
+        &__texto{
+            font-size: 1em;
+            padding: 0.5em 0;
+            //  background-color: blue;
+            
+        }
+        
+        &__info{
+            width: 80%;
+            // background-color: red;
+            display: flex;
+            padding: 0.8em 0;
+        }
+        
+        
+        &__input{
+            height: 2.5em;
+            width: 30em;
+            margin-left: 0;
+            
+        }
+        
+        &__submit{
+            
+            width: 20vh;
+            height: 2.5em;
+            
+            &:hover,:focus{
+                
+                box-shadow: inset 8em 0 0 0 lighten($color-gris,20%);
+                cursor: pointer;
+                
+                
+            }
+        }
+    }
+    
+    //---------------RES-Footer de la página--------------//
+    
+    .footer{
+        padding: 2em; 
+        
+        
+        
+        &__redes{
+            display: flex;
+            justify-content: center;
+            // background-color: blue;
+            padding: 1em 0;
+        }
+        
+        
+        &__enlace-redes {
+            
+            width: 2em;
+            height: 2em;
+            font-size: 1.3em;
+            
+        }
+        
+        
+        
+        &__bar{
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            align-items: center;
+            margin: 0;
+            flex-direction: column;
+            //  background-color: green;
+            
+        }
+        
+        &__item{
+            margin-right: 0em;
+            margin-bottom: 0.7em;
+            font-size: 1em;
+            
+            
+        }
+        
+        
+        &__bar2{
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            align-items: center;
+            //background-color: red;
+            
+        }
+        
+        &__item2{
+            color: $color-blanco;
+            margin-right: 1.2em;
+            font-size: 0.7em;
+            padding: 0.5em 0;
+        }
+        
+    }
+    
+    //----------RES-TIENDA--------------
+    .tienda{
+        
+       
+      
+       
+        flex-direction: column;
+        padding-top: 0;
+        
+        
+        
+        &__filtros{
+            flex-basis: 15%;
+            //background-color: blue;
+            padding: 0.5em;
+            padding-top: 0;
+            display: none;
+        }
+        
+        &__productos{
+            flex-basis: 85%;
+            //background-color: chocolate;
+            padding: 0.5em;
+            justify-content: space-around;
+            
+        }
+
+        &__responsive{
+            display: block;
+            padding: 1.2em;
+            margin: 1em;
+            background-color: white;
+            border: 2px solid #AFAFAF;
+            
+        }
+    }
+
+    //---------------RES-Seccion de filtros--------------//
+.filtros{
+    
+    &__item{
+        
+        padding: 0.3em;
+    }
+    
+    &__color{
+        width: 2.3em;
+        height: 2.3em;
+        margin-right: 1.5em;
+        opacity: 1;
+    }
+
+    &__titulo-responsive{
+        display: block;
+        font-family: $tipo-titulos;
+        color: #515151;
+        //background-color: red;
+    & i{
+        float: right;
+       padding: 0.2em;
+    }
+    }
+    
+}
+//---------------RES-Contenedor de producto--------------//
+
+.producto{
+
+    flex-basis: 45%;
+    height: 23em;
+    margin: 0.5em;
+    
+ 
+    
+    &__info{
+        padding: 0 1.2em;
+        //background-color: gray;
+        
+        &--item{
+           
+            margin: 0.2em 0;
+        }
+    }
+    
+    &__modelo{
+        font-size: 0.8em;
+        
+        &--grande{
+            font-size: 1.4em;
+        }
+    }
+    
+    &__nombre{
+       
+       
+        &--grande{
+            font-size: 2em;
+        }
+    }
+    
+    &__precio{
+        font-size: 1.7em;
+        &--grande{
+            font-size: 2.4em;
+           
+        }
+    }
+   
+    &__btn{
+        opacity: 1;
+        font-size: 1em;
+        padding: 0.5em;
+        width:6em ;
+    }
+    
+}
+    
+//---------------RES-Pagina de producto individual--------------//
+
+.informacion{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1.5em;
+    height: 100vh;
+    
+    &__galeria{
+        flex-basis: 40%;
+        width: 100%;
+      //  background-color: red;
+        height: 100%;
+        display: flex;
+    }
+    
+    &__carac{
+        flex-basis: 60%;
+        width: 100%;
+       // background-color: blue;
+        height: 100%;
+        padding: 0 1em;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+    
+}
+
+.galeria{
+    
+    &__selector{
+        flex-basis: 25%;
+        //background-color: pink;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 1em;
+    }
+    
+    &__miniatura{
+        flex-basis: 30%;
+        opacity: 0.6;
+    }
+    
+    &__fotos{
+        flex-basis: 70%;
+    }
+}
+
+.carac{
+    
+    &__titulos{
+        flex-basis: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        //background-color: gray;
+        
+        
+        &--item{
+            margin: 0.2em 0;
+        }
+    }
+    
+    &__filtros{
+        flex-basis: 35%;
+        //background-color: red;
+        display: flex;
+        margin: 0;
+        
+    }
+    
+    &__btn{
+        font-size: 1.4em;
+        padding: 0.4em;
+        width: 50% ;
+        margin: 1em 0;
+       
+       
+    }
+    
+    &__nombreColor{
+        font-size: 1.3em;
+        margin-top: 0.4em;
+    }
+    
+    &__color{
         
         width: 2.3em;
         height: 2.3em;
-        
-        
     }
     
-    &__titulo{
-        font-size: 1em;
-        margin: 1em 0;
+    &__banda{
         
+        width: 2.3em;
+        height: 2.3em;
     }
-    
-    
-}
-
-//---------------RES-Segunda publicidad del producto--------------//
-
-.promo2{
-    
-    &__zoom{
-       
-        display: none;
-      
-        
-        &2{
-           
-            justify-content: center;
-            
-        }
-    }
-    
 }
 
 
-//---------------RES-Newsletter--------------//
-
-.newsletter{
-    width: 80%;
-    flex-basis: auto;
-    height: auto;
-    padding:0em;
-    margin-bottom: -2em;
+//--------------RES-Detalles del producto-------------------//
+.detalles{
+    
+   
+    padding: 2.5em;
+    height: 110vh;
     display: flex;
-    
     flex-direction: column;
     
+    &__titulo{
+        font-size: 2.5em;
+    }
     
+    &__tabla{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        background-color: #F2F2F2;
+    }
+    
+    &__img{
+        flex-basis: 50%;
+    //    background-color: blue;
+    }
+    
+}
+
+.pestanas{
+    
+    flex-basis: 50%;
+  //  background-color: red;
+    &__botones{
+        display: flex;
+    }
+    
+    &__btn{
+        font-size: 1.3em;
+        padding: 0.3em;
+        width: 35%;
+    }
+    
+    &__seccion{
+        display: none;
+        padding: 1em 0.3em;
+    }
     
     &__texto{
-        font-size: 1em;
-       padding: 0.5em 0;
-     //  background-color: blue;
+        font-size: 1.3em;
+        color: $color-gris;
         
     }
     
-    &__info{
-        width: 80%;
-      // background-color: red;
-        display: flex;
-        padding: 0.8em 0;
+    &__lista{
+        list-style-position: inside; 
+        list-style-type: square;
     }
     
-    
-    &__input{
-        height: 2.5em;
-        width: 30em;
-        margin-left: 0;
+    &__item{
+        font-size: 1.3em;
+        padding: 0.5em 0;
         
-    }
-    
-    &__submit{
-        
-        width: 20vh;
-        height: 2.5em;
-        
-        &:hover,:focus{
-            
-            box-shadow: inset 8em 0 0 0 lighten($color-gris,20%);
-            cursor: pointer;
-            
-            
-        }
     }
 }
 
-//---------------RES-Footer de la página--------------//
+//---------------RES-Carrito de compras--------------//
 
-.footer{
-    padding: 2em; 
+.cont-carrito{
+
+    margin-top: 12vh;
+    padding: 1.5em;
+}
+.carrito{
     
     
+    flex-direction: column-reverse;
     
-    &__redes{
-        display: flex;
-        justify-content: center;
-       // background-color: blue;
-        padding: 1em 0;
+    
+    &__titulo{
+        font-size: 2.5em;
+    }
+    
+    &__productos{
+        flex-basis: auto;
+        height: auto;
+        width: 100%;
+        
     }
     
     
-    &__enlace-redes {
-     
-        width: 2em;
-        height: 2em;
+    &__resumen{
+        height: 6em;
+        padding: 1em;
+        margin-bottom: 1em;
+       // background-color: red;
+        &--pequeno{
+            height: 22em;
+        }
+        
+    }
+}
+
+.lista-productos{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 0.5em;
+    
+    &__item{
+        flex-basis: 9em;
+    }
+}
+
+.item-carro{
+    
+    &__img{
+        flex-basis: 20%;
+    }
+    
+    &__nombre{
+        flex-basis: 35%; 
+        font-size: 0.9em;
+        margin-right: 1em;
+        //background-color: blue;
+    }
+    
+    &__btn{
+        flex-basis: 6%; 
+        height: 35px;
+        font-size: 1.3em;
+        
+    }
+    &__btn2{
+        flex-basis: 6%; 
+        height: 35px;
         font-size: 1.3em;
         
     }
     
+    &__cantidad{
+        flex-basis: 5%;
+        height: 35px;
+        font-size: 1em;
+    }
     
+    &__precio{
+        flex-basis: 15%;
+        font-size: 1.2em;
+    }
     
-    &__bar{
-        display: flex;
-        justify-content: center;
-        list-style-type: none;
-        align-items: center;
-        margin: 0;
-        flex-direction: column;
-      //  background-color: green;
+    &__eliminar{
+        flex-basis: 10%;
+        font-size: 1.5em;
+    }
+}
+
+.resumen{
+    
+    &__titulo{
+        font-family: $tipo-titulos;
+        font-size: 1.8em;
+        color: #515151;
+        text-align: center;
         
+    }
+    
+    &__lista{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
     }
     
     &__item{
-        margin-right: 0em;
-        margin-bottom: 0.7em;
-        font-size: 1em;
-        
-        
-    }
-    
-    
-    &__bar2{
         display: flex;
-        justify-content: center;
-        list-style-type: none;
-        align-items: center;
-        //background-color: red;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 1em;
+        color: #686868;
+        padding: 0.4em 0;
+    }
+    
+    &__cantidad{
+        border-bottom: 1px solid #C7C7C9;
+        padding: 1em 0;
         
     }
     
-    &__item2{
-        color: $color-blanco;
-        margin-right: 1.2em;
-        font-size: 0.7em;
-        padding: 0.5em 0;
+    &__num-prod{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__envio{
+        border-bottom: 1px solid #C7C7C9;
+        padding-bottom: 1em;
+    }
+    
+    &__total{
+        font-size: 1.3em;
+    }
+    
+    &__num-total{
+        font-size: 1.3em;
+    }
+    
+    &__btn{
+        font-size: 1.5em;
+        padding: 0.2em;
+        width: 70% ;
+        align-self: center;
+        margin: 0;
+        margin-top: 0.3em;
+  
     }
     
 }
 
+//---------------RES-Pagina de pago--------------//
+
+.cont-pago{
+    width: 100%;
+    margin-top: 12vh;
+    padding: 1.5em;
+    
+    &__titulo{
+        font-size: 2.5em;
+        margin-bottom: 0.4em;
+    }
+}
+.pago{
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    
+    
+    
+    
+    &__formularios{
+        flex-basis: 70%;
+        height: auto;
+        display:flex;
+        flex-direction: column;
+        
+    }
+    
+    
+    
+}
+
+.formularios{
+    &__titulo{
+        color: #AFAFAF;
+        font-family: $tipo-titulos;
+        margin-bottom: 1em;
+        font-size: 1.3em;
+        
+        &--pequeno{
+            font-size: 1em;
+        }
+    }
+    
+    &__item{
+        padding: 0.7em;
+        font-size: 1em;
+        width: 60%;
+        margin-bottom: 1em;
+        color:#727272;
+        margin-right: 1em;
+        border: 1px solid #AFAFAF;
+    }
+    
+    &__horizontal{
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+
+   
+    
+    &__estado, &__ciudad,&__zip, &__fecha, &__mes, &__cvv{
+        width: 60%;
+        
+    }
+
+    &__estado, &__ciudad, &__fecha, &__mes{
+        height: 2.5em;
+        
+    }
+    
+    &__tarjeta{
+        color:#AFAFAF;
+        font-size: 3em;
+        margin-right: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    &__btn{
+        font-size: 1.5em;
+        padding: 0.2em;
+        width: 60% ;
+    }
+}
+
+
+
+    
 }
