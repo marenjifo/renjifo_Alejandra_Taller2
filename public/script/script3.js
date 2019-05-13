@@ -159,7 +159,7 @@ function paginaCargada() {
                 }
                 suma += parseInt(temp);
                 
-           /*Sumar cantidad
+           /*Sumar cantidad    */
            btnNuevo2.addEventListener('click', function () {
               // cantidad=1;
             console.log("click-btn");
@@ -177,7 +177,7 @@ function paginaCargada() {
                 total__compra.innerHTML = "$" + suma;   
                 //actualizarCarrito();
         });
-        */
+    
 
 
             //Eliminar elemento del carrito
