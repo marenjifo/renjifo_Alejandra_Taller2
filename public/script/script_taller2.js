@@ -202,7 +202,6 @@ botones2.forEach(recorrerBtn2);
 
 
 
-
 }
 
 window.addEventListener('load',paginaCargada);

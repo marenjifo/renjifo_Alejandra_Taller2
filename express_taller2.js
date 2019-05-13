@@ -152,7 +152,8 @@ app.post('/checkout', function(req, res) {
        fecha:req.body.fecha,
        mes:req.body.mes,
        cvv:req.body.cvv,
-       nombre__tarjeta:req.body.nombre__tarjeta
+       nombre__tarjeta:req.body.nombre__tarjeta,
+       productos:JSON.parse(req.body.productos)
        
     };
 
@@ -162,7 +163,7 @@ app.post('/checkout', function(req, res) {
         console.log("Pedido Guardado");
 
     });
-    res.redirect('/');
+    res.redirect('/tienda');
 });
 
 

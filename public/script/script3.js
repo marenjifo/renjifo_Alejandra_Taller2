@@ -254,8 +254,18 @@ function paginaCargada() {
         botonesPestana.forEach(recorrerBtnPestana);
     }
 
-
-
+//----------Enviar lista de productos a base de datos---------
+var form=document.querySelector('.pago__formularios');
+function enviarProductos(event){
+    //event.preventDefault();
+ //   console.log("holiii")
+    var input= document.querySelector('.formularios__productos');
+    input.value=localStorage.getItem('listaCarrito');
+    localStorage.removeItem('listaCarrito');
+}
+if(form!=null){
+    form.addEventListener('submit',enviarProductos);
+};
 
 
 
