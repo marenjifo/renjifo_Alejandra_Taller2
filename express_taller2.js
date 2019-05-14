@@ -153,7 +153,8 @@ app.post('/checkout', function(req, res) {
        mes:req.body.mes,
        cvv:req.body.cvv,
        nombre__tarjeta:req.body.nombre__tarjeta,
-       productos:JSON.parse(req.body.productos)
+       productos:JSON.parse(req.body.productos),
+       total:req.body.total
        
     };
 

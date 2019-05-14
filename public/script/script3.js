@@ -54,23 +54,27 @@ function paginaCargada() {
                 });
                 secciones[index].style.display = 'block';
             }
-            /*
+           
             function btnActivo(event){
                 for (let index = 0; index < botones.length; index++) {
                     const btn = botones[index];
                     btn.classList.remove('active');
-                    console.log("se quito"+ btn);
                 }
                 btn.classList.add('active');
                 
             }
-            
-            */
+            if (index === 0) {
+                btnActivo();
+            }
+         
             btn.addEventListener('click', mostrarSeccion);
-            // btn.addEventListener('click',btnActivo);
+            btn.addEventListener('click',btnActivo);
 
         }
-        botones.forEach(recorrerBotones);
+        if(botones!=null){
+            botones.forEach(recorrerBotones);
+        }
+       
 
     }
 
@@ -263,8 +267,16 @@ function enviarProductos(event){
     input.value=localStorage.getItem('listaCarrito');
     localStorage.removeItem('listaCarrito');
 }
+function enviarTotal(event){
+    //event.preventDefault();
+ //   console.log("holiii")
+    var input= document.querySelector('.formularios__total');
+    input.value=total__compra.innerHTML;
+    console.log(input.value);
+}
 if(form!=null){
     form.addEventListener('submit',enviarProductos);
+    form.addEventListener('submit',enviarTotal);
 };
 
 
